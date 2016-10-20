@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?xnppd1');
+  src:  url('fonts/icomoon.eot?xnppd1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?xnppd1') format('truetype'),
+    url('fonts/icomoon.woff?xnppd1') format('woff'),
+    url('fonts/icomoon.svg?xnppd1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-1-top:before {
+  content: "\e902";
+}
+.icon-arrow-1-right:before {
+  content: "\e903";
+}
+.icon-arrow-1-down:before {
+  content: "\e901";
+}
+.icon-arrow-1-left:before {
+  content: "\e904";
+}
+.icon-list-1:before {
+  content: "\e905";
+}
+.icon-shoppingCart-1:before {
+  content: "\e900";
+}
+
