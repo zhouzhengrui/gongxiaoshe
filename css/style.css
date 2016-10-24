@@ -272,6 +272,46 @@ a .fontIcon {
   color: #00a650;
 }
 
+.buttonBox {
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative;
+  padding: 8px 30px;
+  color: #fff;
+  background-color: #00a650;
+}
+
+.button:hover {
+  background-color: #F2A30C;
+}
+
+.button:active {
+  -webkit-transition: all 0s;
+  transition: all 0s;
+  background: #008540;
+}
+
+.smallButton {
+  padding: 2px 20px;
+  font-size: 14px;
+}
+
+.smallButton.auxButton {
+  padding: 1px 20px;
+  color: #00a650;
+  background-color: #f1f1f1;
+  border: 1px solid #00a650;
+}
+
+.smallButton.auxButton:hover {
+  background-color: #fff;
+}
+
 span.label {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -3365,17 +3405,29 @@ span.label {
   font-size: 16px;
 }
 
-.typeBox .typeButton i {
-  float: right;
-  font-size: 20px;
+.hideTypeMenu {
+  cursor: pointer;
 }
 
-.typeBox .typeButton:hover {
+.hideTypeMenu .typeButton i {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  display: block;
+  float: right;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 14px;
+}
+
+.hideTypeMenu .typeButton:hover {
   background-color: #1aaf62;
 }
 
-.hideTypeMenu {
-  cursor: pointer;
+.hideTypeMenu .typeButton:hover i {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .hideTypeMenu ul.typeMenu {
@@ -3738,6 +3790,7 @@ ul.typeMenu .typeGroup dl dd a:hover {
 
 .footerBar {
   margin-top: 25px;
+  margin-bottom: -1px;
   padding: 25px 0;
   height: 75px;
   background: #f1f1f1;
@@ -3752,6 +3805,7 @@ ul.typeMenu .typeGroup dl dd a:hover {
 .footerBox {
   padding: 25px 0;
   background: #ffffff;
+  border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   color: #333333;
 }
@@ -4152,11 +4206,11 @@ ul.typeMenu .typeGroup dl dd a:hover {
 .loginBox .loginForm .submit {
   display: block;
   width: 100%;
+  height: 50px;
   margin: 10px 0;
   color: #fff;
   background-color: #00a650;
   font-size: 24px;
-  height: 50px;
   cursor: pointer;
 }
 
@@ -4176,7 +4230,8 @@ ul.typeMenu .typeGroup dl dd a:hover {
   clear: both;
 }
 
-.loginBox .loginForm .function input, .loginBox .loginForm .function label {
+.loginBox .loginForm .function input,
+.loginBox .loginForm .function label {
   cursor: pointer;
   vertical-align: middle;
 }
@@ -4187,6 +4242,329 @@ ul.typeMenu .typeGroup dl dd a:hover {
 
 .loginBox .loginForm label {
   color: #666666;
+}
+
+.cartBox {
+  padding: 20px 0;
+}
+
+.cartBox .cartHeader {
+  *zoom: 1;
+  border: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+.cartBox .cartHeader:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.cartBox .cartHeader .column {
+  float: left;
+  padding: 10px 20px;
+}
+
+.cartBox .cartHeader .cartCheckbox {
+  width: 85px;
+}
+
+.cartBox .cartHeader .cartCheckbox input,
+.cartBox .cartHeader .cartCheckbox label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.cartBox .cartHeader .cartGoods {
+  width: 473px;
+}
+
+.cartBox .cartHeader .cartPrice {
+  width: 100px;
+}
+
+.cartBox .cartHeader .cartQuantity {
+  width: 100px;
+}
+
+.cartBox .cartHeader .cartSum {
+  width: 100px;
+}
+
+.cartBox .cartHeader .cartAction {
+  width: 100px;
+}
+
+.cartBox .cartList .row {
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.cartBox .cartList .rowSelect {
+  background-color: #e6f6ee;
+}
+
+.cartBox .cartList .column {
+  float: left;
+  padding: 20px;
+}
+
+.cartBox .cartList .cartCheckbox {
+  width: 13px;
+  padding-right: 0;
+}
+
+.cartBox .cartList .cartCheckbox input {
+  cursor: pointer;
+}
+
+.cartBox .cartList .cartGoods {
+  *zoom: 1;
+  width: 565px;
+}
+
+.cartBox .cartList .cartGoods:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.cartBox .cartList .cartGoods .imageBox {
+  float: left;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 10px;
+  border: 1px solid #dfdfdf;
+}
+
+.cartBox .cartList .cartGoods .imageBox img {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.cartBox .cartList .cartGoods .infoBox {
+  float: left;
+}
+
+.cartBox .cartList .cartGoods .infoBox .name {
+  display: block;
+}
+
+.cartBox .cartList .cartGoods .infoBox .name:hover {
+  text-decoration: underline;
+}
+
+.cartBox .cartList .cartGoods .infoBox .model {
+  color: #999999;
+}
+
+.cartBox .cartList .cartPrice {
+  width: 100px;
+}
+
+.cartBox .cartList .cartPrice .lineThrough {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.cartBox .cartList .cartQuantity {
+  width: 100px;
+}
+
+.cartBox .cartList .cartQuantity .quantity {
+  position: relative;
+  width: 100px;
+  height: 26px;
+}
+
+.cartBox .cartList .cartQuantity a {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+.cartBox .cartList .cartQuantity a.minus {
+  left: 0;
+}
+
+.cartBox .cartList .cartQuantity a.plus {
+  right: 0;
+}
+
+.cartBox .cartList .cartQuantity a.noMinus {
+  color: #999999;
+  background-color: #f1f1f1;
+  cursor: default;
+}
+
+.cartBox .cartList .cartQuantity a.noMinus:active, .cartBox .cartList .cartQuantity a.noMinus:hover {
+  color: #999999;
+  border-color: #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+.cartBox .cartList .cartQuantity a:hover {
+  color: #fff;
+  border-color: #00a650;
+  background-color: #00a650;
+}
+
+.cartBox .cartList .cartQuantity a:active {
+  background-color: #1aaf62;
+}
+
+.cartBox .cartList .cartQuantity .number {
+  position: absolute;
+  top: 0;
+  left: 26px;
+  width: 48px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.cartBox .cartList .cartSum {
+  width: 100px;
+}
+
+.cartBox .cartList .cartSum .sum {
+  font-weight: bold;
+  color: #00a650;
+}
+
+.cartBox .cartList .cartAction {
+  width: 100px;
+}
+
+.cartBox .cartList .cartAction a {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  border: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+.cartBox .cartList .cartAction a:hover {
+  color: #00a650;
+  border-color: #00a650;
+  background-color: #fff;
+}
+
+.cartBox .cartList .cartAction a.delete:hover {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.cartBox .cartFooter {
+  *zoom: 1;
+  height: 50px;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+  background-color: #f1f1f1;
+}
+
+.cartBox .cartFooter:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.cartBox .cartFooter .column {
+  float: left;
+  padding: 10px 20px;
+}
+
+.cartBox .cartFooter .cartCheckbox {
+  width: 50px;
+  padding-right: 0;
+}
+
+.cartBox .cartFooter .cartCheckbox input,
+.cartBox .cartFooter .cartCheckbox label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.cartBox .cartFooter .cartFooterLink a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-top: 1px;
+  color: #999999;
+}
+
+.cartBox .cartFooter .cartFooterLink a:hover {
+  color: #a94442;
+}
+
+.cartBox .cartFooter .cartFooterInfo p {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 10px;
+}
+
+.cartBox .cartFooter .cartFooterInfo p em {
+  color: #00a650;
+}
+
+.cartBox .cartFooter .cartFooterInfo p.price {
+  color: #00a650;
+}
+
+.cartBox .cartFooter .cartFooterInfo p.price em {
+  font-size: 24px;
+}
+
+.cartBox .cartFooter .cartSubmit {
+  float: right;
+  padding: 0;
+}
+
+.cartBox .cartFooter .cartSubmit .submit {
+  display: block;
+  margin: -1px -1px 0 0;
+  padding: 0 50px;
+  height: 52px;
+  color: #fff;
+  background-color: #00a650;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cartBox .cartFooter .cartSubmit .submit:hover {
+  background-color: #F2A30C;
+}
+
+.cartEmpty {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cartEmpty i.cartEmptyIcon {
+  display: block;
+  font-size: 80px;
+  margin-bottom: 30px;
+  color: #dfdfdf;
 }
 
 .pageBannerBox {

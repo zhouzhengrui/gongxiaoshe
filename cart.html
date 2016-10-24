@@ -264,36 +264,148 @@
             </div>
         </div>
         <!--header over-->
-        <!-- login start -->
-        <div class="loginBox">
-            <div class="container">
-                <img class="loginImage loginImage-1" src="img/loginImage-1.png" alt="">
-                <img class="loginImage loginImage-2 iShake" src="img/loginImage-2.png" alt="">
-                <img class="loginImage loginImage-3 iSpin" src="img/loginImage-3.png" alt="">
-                <div class="login">
-                    <h4 class="title">用户登录</h4>
-                    <form class="loginForm" action="">
-                        <label for="">用户名</label>
-                        <input type="text" class="input" placeholder="请输入用户名">
-                        <label for="">密码</label>
-                        <input type="password" class="input" placeholder="请输入密码">
-                        <div class="function">
-                            <div class="pull-left">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">记住密码</label>
-                            </div>
-                            <a href="#" class="pull-right">忘记密码</a>
-                            <div class="clear"></div>
-                        </div>
-                        <!-- 登录按钮添加回车登录功能 -->
-                        <input type="submit" class="submit" value="登录">
-                        <!-- 正常状态删除下面div -->
-                        <div class="alert alert-danger">用户名或密码错误，请重新输入</div>
-                    </form>
+        <!-- main start -->
+        <div class="container">
+            <!-- 无商品显示cartEmpty, 有商品显示cartBox -->
+            <!-- empty start -->
+            <div class="cartEmpty">
+                <i class="cartEmptyIcon icon-shoppingCart-1"></i>
+                <p>购物车内暂时没有商品，登录后将显示您之前加入的商品</p>
+                <div class="buttonBox">
+                    <a class="button smallButton" href="login.html">登录</a>
+                    <a class="button smallButton auxButton" href="#">去购物</a>
                 </div>
             </div>
+            <!-- empty over -->
+            <!-- cart start -->
+            <div class="cartBox">
+                <!-- header start -->
+                <div class="cartHeader">
+                    <div class="column cartCheckbox">
+                        <input type="checkbox" id="all">
+                        <label for="all">全选</label>
+                    </div>
+                    <div class="column cartGoods">商品信息</div>
+                    <div class="column cartPrice">单价(元)</div>
+                    <div class="column cartQuantity">数量</div>
+                    <div class="column cartSum">小计</div>
+                    <div class="column cartAction">操作</div>
+                    <div class="clear"></div>
+                </div>
+                <!-- header over -->
+                <!-- list start -->
+                <div class="cartList">
+                    <!-- li start -->
+                    <!-- 选中状态添加 rowSelect -->
+                    <div class="row rowSelect">
+                        <div class="column cartCheckbox">
+                            <input type="checkbox"> </div>
+                        <div class="column cartGoods">
+                            <div class="imageBox">
+                                <div>
+                                    <a href="#">
+                                        <img src="img/noneSmall.jpg" alt=""> </a>
+                                </div>
+                            </div>
+                            <div class="infoBox">
+                                <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                <p class="model">200g</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="column cartPrice">
+                            <p class="lineThrough">￥77.80</p>
+                            <p class="price">￥67.80</p>
+                        </div>
+                        <div class="column cartQuantity">
+                            <div class="quantity">
+                                <!-- 数量大于1时移除 noMinus -->
+                                <a class="minus noMinus" href="#">-</a>
+                                <input class="number" type="text" value="1">
+                                <a class="plus" href="#">+</a>
+                            </div>
+                        </div>
+                        <div class="column cartSum">
+                            <p class="sum">￥67.80</p>
+                        </div>
+                        <div class="column cartAction">
+                            <a href="#">常规按钮</a>
+                            <a href="#" class="delete">删除按钮</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- li over -->
+                    <!-- li start -->
+                    <div class="row">
+                        <div class="column cartCheckbox">
+                            <input type="checkbox"> </div>
+                        <div class="column cartGoods">
+                            <div class="imageBox">
+                                <div>
+                                    <a href="#">
+                                        <img src="img/noneSmall.jpg" alt=""> </a>
+                                </div>
+                            </div>
+                            <div class="infoBox">
+                                <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                <p class="model">200g</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="column cartPrice">
+                            <p class="lineThrough">￥77.80</p>
+                            <p class="price">￥67.80</p>
+                        </div>
+                        <div class="column cartQuantity">
+                            <div class="quantity">
+                                <!-- 数量大于1时移除 noMinus -->
+                                <a class="minus noMinus" href="#">-</a>
+                                <input class="number" type="text" value="1">
+                                <a class="plus" href="#">+</a>
+                            </div>
+                        </div>
+                        <div class="column cartSum">
+                            <p class="sum">￥67.80</p>
+                        </div>
+                        <div class="column cartAction">
+                            <a href="#">常规按钮</a>
+                            <a href="#" class="delete">删除按钮</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- li over -->
+                </div>
+                <!-- list over -->
+                <!-- footer start -->
+                <div class="cartFooter">
+                    <div class="column cartCheckbox">
+                        <input type="checkbox" id="all">
+                        <label for="all">全选</label>
+                    </div>
+                    <div class="column cartFooterLink">
+                        <a href="#" class="delete">删除已选商品</a>
+                    </div>
+                    <div class="pull-right">
+                        <div class="column cartFooterInfo">
+                            <p>已选商品
+                                <em>2</em>件</p>
+                            <p>合计 (不含运费):</p>
+                            <p class="price">
+                                <span>￥</span>
+                                <em>33.90</em>
+                            </p>
+                        </div>
+                        <div class="column cartSubmit">
+                            <input class="submit" type="submit" value="结算"> </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- footer over -->
+            </div>
+            <!-- cart over -->
         </div>
-        <!-- login over -->
+        <!-- main over -->
         <!--footer start-->
         <div class="footerBox">
             <div class="container">

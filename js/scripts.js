@@ -20,8 +20,12 @@ jQuery(document).ready(function($) {
     $(".hideTypeMenu .typeButton").click(function() {
         if ($(".hideTypeMenu .typeMenu").css("display") == "none") {
             $(".hideTypeMenu .typeMenu").show();
+            $(".hideTypeMenu .typeButton i").removeClass("icon-arrow-1-down");
+            $(".hideTypeMenu .typeButton i").addClass("icon-arrow-1-up");
         } else {
             $(".hideTypeMenu .typeMenu").hide();
+            $(".hideTypeMenu .typeButton i").removeClass("icon-arrow-1-up");
+            $(".hideTypeMenu .typeButton i").addClass("icon-arrow-1-down");
         }
     });
 
