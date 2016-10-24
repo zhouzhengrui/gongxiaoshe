@@ -17,6 +17,14 @@ jQuery(document).ready(function($) {
         cssArrows: false
     });
 
+    $(".hideTypeMenu .typeButton").click(function() {
+        if ($(".hideTypeMenu .typeMenu").css("display") == "none") {
+            $(".hideTypeMenu .typeMenu").show();
+        } else {
+            $(".hideTypeMenu .typeMenu").hide();
+        }
+    });
+
     // slider
 
     $(".sliderBox ul").responsiveSlides({
