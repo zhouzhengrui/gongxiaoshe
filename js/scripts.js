@@ -20,12 +20,10 @@ jQuery(document).ready(function($) {
     $(".hideTypeMenu").hover(function() {
         if ($(".hideTypeMenu .typeMenu").css("display") == "none") {
             $(".hideTypeMenu .typeMenu").show();
-            $(".hideTypeMenu .typeButton i").removeClass("icon-arrow-1-down");
-            $(".hideTypeMenu .typeButton i").addClass("icon-arrow-1-up");
+            $(".hideTypeMenu .typeButton").addClass("showTypeMenu");
         } else {
             $(".hideTypeMenu .typeMenu").hide();
-            $(".hideTypeMenu .typeButton i").removeClass("icon-arrow-1-up");
-            $(".hideTypeMenu .typeButton i").addClass("icon-arrow-1-down");
+            $(".hideTypeMenu .typeButton").removeClass("showTypeMenu");
         }
     });
 

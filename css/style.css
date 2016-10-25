@@ -3479,7 +3479,7 @@ span.label {
   background-color: #1aaf62;
 }
 
-.hideTypeMenu .typeButton:hover i {
+.hideTypeMenu .showTypeMenu i {
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -4271,8 +4271,108 @@ ul.typeMenu .typeGroup dl dd a:hover {
   color: #666666;
 }
 
-.cartBox {
+.pageBox {
   padding: 20px 0;
+}
+
+.pageBox .titleBox {
+  margin-bottom: 20px;
+  padding: 0;
+  border-bottom: none;
+}
+
+.pageBox .titleBox .title {
+  color: #333333;
+  line-height: 1em;
+}
+
+.stepBox {
+  *zoom: 1;
+  float: right;
+}
+
+.stepBox:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.stepBox dl.step {
+  position: relative;
+  float: left;
+  height: 26px;
+  margin-left: 10px;
+  border: 1px solid #dfdfdf;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+
+.stepBox dl.step.active, .stepBox dl.step.finish {
+  border-color: #00a650;
+}
+
+.stepBox dl.step.active dt, .stepBox dl.step.active dd, .stepBox dl.step.finish dt, .stepBox dl.step.finish dd {
+  vertical-align: top;
+}
+
+.stepBox dl.step.active dt, .stepBox dl.step.finish dt {
+  color: #fff;
+  border-color: #00a650;
+  background-color: #00a650;
+}
+
+.stepBox dl.step.active dd, .stepBox dl.step.finish dd {
+  color: #00a650;
+}
+
+.stepBox dl.step.finish {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.stepBox dl.step.finish:after {
+  background-color: #00a650;
+}
+
+.stepBox dl.step:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: -11px;
+  width: 10px;
+  height: 1px;
+  background-color: #dfdfdf;
+}
+
+.stepBox dl.step.stepLast:after {
+  display: none;
+}
+
+.stepBox dt, .stepBox dd {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  color: #999999;
+}
+
+.stepBox dt {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  margin-top: -1px;
+  margin-left: -1px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+.stepBox dd {
+  padding: 0 10px 0 5px;
 }
 
 .cartBox .cartHeader {
@@ -4637,12 +4737,6 @@ ul.typeMenu .typeGroup dl dd a:hover {
 
 .pageBannerBox .bannerText.pull-right a:last-child {
   margin-right: 0;
-}
-
-.pageBox {
-  background: #fff;
-  padding: 40px 0;
-  border-bottom: 1px solid #dfdfdf;
 }
 
 .mainBox {
