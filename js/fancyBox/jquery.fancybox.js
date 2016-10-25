@@ -141,9 +141,9 @@
 				image    : '<img class="fancybox-image" src="{href}" alt="" />',
 				iframe   : '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen' + (IE ? ' allowtransparency="true"' : '') + '></iframe>',
 				error    : '<p class="fancybox-error">内容不能被加载，请稍后再试。</p>',
-				closeBtn : '<a title="关闭" class="fancybox-item fancybox-close iSpinShortAnimation" href="javascript:;"><i class="fontIcon icon-cancel-1 iAnimation">&#xea53;</i></a>',
-				next     : '<a title="下一张" class="fancybox-nav fancybox-next iFadeInLeftAnimation" href="javascript:;"><span><i class="fontIcon icon-angle-right iAnimation">&#xe8ec;</i></span></a>',
-				prev     : '<a title="上一张" class="fancybox-nav fancybox-prev iFadeInRightAnimation" href="javascript:;"><span><i class="fontIcon icon-angle-left iAnimation">&#xe8eb;</i></span></a>'
+				closeBtn : '<a class="fancybox-item fancybox-close iSpinShortAnimation" href="javascript:;"><i class="icon-cancel-1 iAnimation"></i></a>',
+				next     : '<a class="fancybox-nav fancybox-next iFadeInLeftAnimation" href="javascript:;"><span><i class="icon-arrow-1-right iAnimation"></i></span></a>',
+				prev     : '<a class="fancybox-nav fancybox-prev iFadeInRightAnimation" href="javascript:;"><span><i class="icon-arrow-1-left iAnimation"></i></span></a>'
 			},
 
 			// Properties for each animation type

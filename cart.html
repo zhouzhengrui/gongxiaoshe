@@ -320,7 +320,7 @@
                         <div class="column cartQuantity">
                             <div class="quantity">
                                 <!-- 数量大于1时移除 noMinus -->
-                                <a class="minus noMinus" href="#">-</a>
+                                <a class="minus noMinus" href="javascript:;">-</a>
                                 <input class="number" type="text" value="1">
                                 <a class="plus" href="#">+</a>
                             </div>
@@ -330,7 +330,7 @@
                         </div>
                         <div class="column cartAction">
                             <a href="#">常规按钮</a>
-                            <a href="#" class="delete">删除按钮</a>
+                            <a href="#fancybox-1" class="delete fancyboxButton">删除按钮</a>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -358,9 +358,8 @@
                         </div>
                         <div class="column cartQuantity">
                             <div class="quantity">
-                                <!-- 数量大于1时移除 noMinus -->
-                                <a class="minus noMinus" href="#">-</a>
-                                <input class="number" type="text" value="1">
+                                <a class="minus" href="#">-</a>
+                                <input class="number" type="text" value="2">
                                 <a class="plus" href="#">+</a>
                             </div>
                         </div>
@@ -369,7 +368,7 @@
                         </div>
                         <div class="column cartAction">
                             <a href="#">常规按钮</a>
-                            <a href="#" class="delete">删除按钮</a>
+                            <a href="#fancybox-1" class="delete fancyboxButton">删除按钮</a>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -383,7 +382,7 @@
                         <label for="footerAll">全选</label>
                     </div>
                     <div class="column cartFooterLink">
-                        <a href="#" class="delete">删除已选商品</a>
+                        <a href="#fancybox-2" class="delete fancyboxButton">删除已选商品</a>
                     </div>
                     <div class="pull-right">
                         <div class="column cartFooterInfo">
@@ -460,6 +459,42 @@
             </div>
         </div>
         <!--bottomBar over-->
+        <!--fancyBox start-->
+        <div style="display: none;">
+            <!-- box-1 start -->
+            <div id="fancybox-1" class="fancyboxGroup">
+                <h4 class="fancyboxTitleBox">删除商品</h4>
+                <div class="fancyboxContentBox">
+                    <p>确认要删除该商品吗？</p>
+                </div>
+                <div class="fancyboxButtonBox buttonBox">
+                    <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>确定</span>
+                    </a>
+                    <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>关闭</span>
+                    </a>
+                </div>
+            </div>
+            <!-- box-1 over -->
+            <!-- box-2 start -->
+            <div id="fancybox-2" class="fancyboxGroup">
+                <h4 class="fancyboxTitleBox">删除商品</h4>
+                <div class="fancyboxContentBox">
+                    <p>确认要删除这些商品吗？</p>
+                </div>
+                <div class="fancyboxButtonBox">
+                    <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>确定</span>
+                    </a>
+                    <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>关闭</span>
+                    </a>
+                </div>
+            </div>
+            <!-- box-2 over -->
+        </div>
+        <!--fancyBox over-->
         <!-- jquery -->
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <!-- animateIt -->

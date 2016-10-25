@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
         cssArrows: false
     });
 
-    $(".hideTypeMenu .typeButton").click(function() {
+    $(".hideTypeMenu").hover(function() {
         if ($(".hideTypeMenu .typeMenu").css("display") == "none") {
             $(".hideTypeMenu .typeMenu").show();
             $(".hideTypeMenu .typeButton i").removeClass("icon-arrow-1-down");
@@ -85,10 +85,12 @@ jQuery(document).ready(function($) {
 
     // fancy box
 
-    $(".fancybox").fancybox({
+    $(".fancyboxButton").fancybox({
+        padding: 0,
+        margin: 0,
+        minWidth: 350,
+        maxWidth: 1000,
         helpers: {
-            padding: 10,
-            margin: 15,
             title: {
                 type: 'outside'
             }

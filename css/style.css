@@ -296,6 +296,17 @@ a .fontIcon {
   background: #008540;
 }
 
+.button.auxButton {
+  padding: 6px 30px;
+  color: #00a650;
+  background-color: #f1f1f1;
+  border: 1px solid #00a650;
+}
+
+.button.auxButton:hover {
+  background-color: #fff;
+}
+
 .smallButton {
   padding: 2px 20px;
   font-size: 14px;
@@ -379,6 +390,49 @@ span.label {
   color: #a94442;
   background-color: #f2dede;
   border-color: #ebccd1;
+}
+
+.fancybox-skin {
+  background-color: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.fancybox-close {
+  top: 18px;
+  right: 20px;
+  color: #999999;
+}
+
+.fancybox-close:hover {
+  color: #00a650;
+}
+
+.fancybox-close i {
+  display: block;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+}
+
+.fancyboxTitleBox {
+  padding: 10px 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.fancyboxContentBox {
+  padding: 10px 20px;
+}
+
+.fancyboxContentBox p {
+  margin: 10px 0;
+}
+
+.fancyboxButtonBox {
+  margin-top: 0;
+  padding: 0 20px 20px;
 }
 
 .iScaleAnimation .iAnimation {
@@ -3877,7 +3931,6 @@ ul.typeMenu .typeGroup dl dd a:hover {
   margin: 0;
   border: 0;
   outline: none;
-  vertical-align: top;
 }
 
 .fancybox-wrap {
@@ -3889,12 +3942,6 @@ ul.typeMenu .typeGroup dl dd a:hover {
 
 .fancybox-skin {
   position: relative;
-  background: #f9f9f9;
-  color: #444;
-  text-shadow: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
 .fancybox-opened {
@@ -3902,9 +3949,9 @@ ul.typeMenu .typeGroup dl dd a:hover {
 }
 
 .fancybox-opened .fancybox-skin {
-  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -3920,9 +3967,8 @@ ul.typeMenu .typeGroup dl dd a:hover {
 }
 
 .fancybox-error {
-  color: #444;
   margin: 0;
-  padding: 15px;
+  padding: 20px;
   white-space: nowrap;
 }
 
@@ -3957,27 +4003,8 @@ ul.typeMenu .typeGroup dl dd a:hover {
 
 .fancybox-close {
   position: absolute;
-  top: -18px;
-  right: -18px;
-  padding: 5px;
   cursor: pointer;
   z-index: 8040;
-  background: #000000;
-  color: #ffffff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.fancybox-close:hover {
-  background: #00a650;
-  color: #fff;
-}
-
-.fancybox-close .fontIcon {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
 }
 
 .fancybox-nav {
@@ -4272,8 +4299,12 @@ ul.typeMenu .typeGroup dl dd a:hover {
 
 .cartBox .cartHeader .cartCheckbox input,
 .cartBox .cartHeader .cartCheckbox label {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
   vertical-align: middle;
   cursor: pointer;
+  margin-top: -2px;
 }
 
 .cartBox .cartHeader .cartGoods {
@@ -4845,7 +4876,6 @@ ul.sideNav li .fontIcon {
   *display: inline;
   *zoom: 1;
   padding: 5px 10px;
-  border-radius: 5px;
 }
 
 .pages a {
