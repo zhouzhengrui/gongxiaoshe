@@ -81,6 +81,12 @@ jQuery(document).ready(function($) {
         event: 'mouseover'
     });
 
+    // lazyload
+
+    $("img.lazyload").lazyload({
+        effect: "fadeIn"
+    });
+
     // fancy box
 
     $(".fancyboxButton").fancybox({
