@@ -20,6 +20,7 @@
 		'icon-arrow-1-down': '&#xe901;',
 		'icon-arrow-1-left': '&#xe904;',
 		'icon-list-1': '&#xe905;',
+		'icon-chat-1': '&#xe908;',
 		'icon-shoppingCart-1': '&#xe900;',
 		'0': 0
 		},

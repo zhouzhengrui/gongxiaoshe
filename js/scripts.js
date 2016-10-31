@@ -1,7 +1,6 @@
-
 jQuery(document).ready(function($) {
 
-    // type menu
+    // --------------------------------------------- type menu --------------------------------------------- //
 
     $("ul.typeMenu").superfish({
         hoverClass: "hover",
@@ -27,7 +26,7 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // slider
+    // --------------------------------------------- slider --------------------------------------------- //
 
     $(".sliderBox ul").responsiveSlides({
         namespace: "slider",
@@ -75,7 +74,7 @@ jQuery(document).ready(function($) {
         }, 4000);
     }).trigger("mouseleave");
 
-    // tab
+    // --------------------------------------------- tab --------------------------------------------- //
 
     $(".tabBox .tab").tabs(".panelBox .panel", {
         event: 'mouseover'
@@ -87,7 +86,45 @@ jQuery(document).ready(function($) {
         effect: "fadeIn"
     });
 
-    // fancy box
+    // --------------------------------------------- fly --------------------------------------------- //
+
+    // 计算offset
+    var resetOffset = function() {
+        var offset = $(".sideCart").offset();
+        if ($(window).height() < offset.top) {
+            offset.top = $(".sideCart").offset().top - $(document).scrollTop();
+        }
+        return offset;
+    }
+    var offset = resetOffset();
+    // 如果窗口大小发生变化时需要重新计算
+    window.onresize = function() {
+        offset = resetOffset(offset);
+    }
+    $(".addCart").click(function(event) {
+        var addCart = $(this);
+        var flyer = $('<img class="flyer" src="img/flyer.png" alt="">');
+        flyer.fly({
+            speed: 1,
+            start: {
+                left: event.clientX,
+                top: event.clientY
+            },
+            end: {
+                left: offset.left + 25,
+                top: offset.top + 25,
+                width: 0,
+                height: 0
+            },
+            onEnd: function() {
+                $(".flyOver").show().animate({
+                    width: '50px'
+                }, 400).fadeOut(800);
+            }
+        });
+    });
+
+    // --------------------------------------------- fancy box --------------------------------------------- //
 
     $(".fancyboxButton").fancybox({
         padding: 0,
@@ -101,13 +138,19 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // anchor
+    // --------------------------------------------- anchor --------------------------------------------- //
 
     $(".anchor").click(function() {
         var id = '#' + $(this).attr("rel");
         $("html, body").animate({
             scrollTop: $(id).offset().top
         }, 600);
+    });
+
+    // --------------------------------------------- pageGoodsList --------------------------------------------- //
+
+    $(".pageGoodsList").each(function() {
+        $(".group:nth-child(5n)", this).addClass("groupFix");
     });
 
 });
