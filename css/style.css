@@ -3792,6 +3792,8 @@ ul.hotList li .imageBox div {
 }
 
 ul.hotList li .imageBox div img {
+  max-width: 100%;
+  max-height: 100%;
   *position: relative;
   *top: -50%;
   *left: -50%;
@@ -3891,6 +3893,8 @@ ul.goodsList li .imageBox div {
 }
 
 ul.goodsList li .imageBox div img {
+  max-width: 100%;
+  max-height: 100%;
   *position: relative;
   *top: -50%;
   *left: -50%;
@@ -4053,6 +4057,8 @@ div.pageGoodsList .imageBox div {
 }
 
 div.pageGoodsList .imageBox div img {
+  max-width: 100%;
+  max-height: 100%;
   *position: relative;
   *top: -50%;
   *left: -50%;

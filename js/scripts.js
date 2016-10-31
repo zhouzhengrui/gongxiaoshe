@@ -91,6 +91,9 @@ jQuery(document).ready(function($) {
     // 计算offset
     var resetOffset = function() {
         var offset = $(".sideCart").offset();
+        if (offset == null) {
+            return;
+        }
         if ($(window).height() < offset.top) {
             offset.top = $(".sideCart").offset().top - $(document).scrollTop();
         }
@@ -102,10 +105,13 @@ jQuery(document).ready(function($) {
         offset = resetOffset(offset);
     }
     $(".addCart").click(function(event) {
+        //AJAX添加到购物车
+        var flag = false;
+        //AJAX添加成功后设置flag=true
         var addCart = $(this);
         var flyer = $('<img class="flyer" src="img/flyer.png" alt="">');
         flyer.fly({
-            speed: 1,
+            speed: 1.2,
             start: {
                 left: event.clientX,
                 top: event.clientY
@@ -120,6 +126,10 @@ jQuery(document).ready(function($) {
                 $(".flyOver").show().animate({
                     width: '50px'
                 }, 400).fadeOut(800);
+                //设置购物车内数量
+                var i = parseInt($("#top-cart-quantity").html());
+                $("#top-cart-quantity").html(i + 1);
+                $("#side-cart-quantity").html(i + 1);
             }
         });
     });
