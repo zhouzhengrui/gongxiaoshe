@@ -163,4 +163,15 @@ jQuery(document).ready(function($) {
         $(".group:nth-child(5n)", this).addClass("groupFix");
     });
 
+    // --------------------------------------------- tooltip --------------------------------------------- //
+
+    $(".tooltip").tooltip({
+        effect: 'slide'
+    }).dynamic({
+        bottom: {
+            direction: 'down',
+            bounce: true
+        }
+    });
+
 });

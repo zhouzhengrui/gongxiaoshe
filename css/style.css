@@ -480,6 +480,68 @@ span.label {
   padding: 0 20px 20px;
 }
 
+.tooltip {
+  cursor: default;
+}
+
+.tooltipBox {
+  display: none;
+  max-width: 300px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+}
+
+.tooltipBox:before, .tooltipBox:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.tooltipBox:before {
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #dfdfdf;
+}
+
+.tooltipBox:after {
+  margin-left: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #fff;
+}
+
+.tooltipBox.bottom:before, .tooltipBox.bottom:after {
+  content: "";
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.tooltipBox.bottom:before {
+  top: -10px;
+  margin-left: -10px;
+  border-top: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #dfdfdf;
+}
+
+.tooltipBox.bottom:after {
+  top: -8px;
+  margin-left: -8px;
+  border-top: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+}
+
 .iScaleAnimation .iAnimation {
   -webkit-transition: 0.75s;
   transition: 0.75s;
