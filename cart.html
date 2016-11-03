@@ -31,7 +31,7 @@
                 <p class="pull-left">您好，欢迎光临安徽网上供销社</p>
                 <ul class="topButton pull-right">
                     <li>
-                        <a href="#">账号管理</a>
+                        <a href="user.html">个人中心</a>
                     </li>
                     <li>
                         <a href="#">我的订单</a>
@@ -52,7 +52,7 @@
                 <!-- 已登录状态 -->
                 <ul class="login pull-right">
                     <li>
-                        <a href="#" class="important">administrator</a>
+                        <a href="user.html" class="important">administrator</a>
                     </li>
                     <li>
                         <a href="#">退出</a>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <!--topBar over-->
-        <!--header start-->
+        <!-- header start -->
         <div class="headerBox">
             <div class="container">
                 <a class="logo" href="index.html">
@@ -263,7 +263,7 @@
                 <!-- type over -->
             </div>
         </div>
-        <!--header over-->
+        <!-- header over -->
         <!-- main start -->
         <div class="container pageBox">
             <div class="titleBox">
@@ -289,8 +289,8 @@
             </div>
             <!-- 无商品显示cartEmpty, 有商品显示cartBox -->
             <!-- empty start -->
-            <div class="cartEmpty">
-                <i class="cartEmptyIcon icon-shoppingCart-1"></i>
+            <div class="emptyBox">
+                <i class="icon-shoppingCart-1"></i>
                 <p>购物车内暂时没有商品，登录后将显示您之前加入的商品</p>
                 <div class="buttonBox">
                     <a class="button smallButton" href="login.html">登录</a>
@@ -534,6 +534,38 @@
                 </div>
             </div>
             <!-- box-2 over -->
+            <!-- box-3 start -->
+            <div id="fancybox-3" class="fancyboxGroup">
+                <h4 class="fancyboxTitleBox">删除订单</h4>
+                <div class="fancyboxContentBox">
+                    <p>确认要删除该订单吗？</p>
+                </div>
+                <div class="fancyboxButtonBox buttonBox">
+                    <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>确定</span>
+                    </a>
+                    <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>关闭</span>
+                    </a>
+                </div>
+            </div>
+            <!-- box-3 over -->
+            <!-- box-4 start -->
+            <div id="fancybox-4" class="fancyboxGroup">
+                <h4 class="fancyboxTitleBox">取消订单</h4>
+                <div class="fancyboxContentBox">
+                    <p>确认要取消该订单吗？</p>
+                </div>
+                <div class="fancyboxButtonBox buttonBox">
+                    <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>确定</span>
+                    </a>
+                    <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>关闭</span>
+                    </a>
+                </div>
+            </div>
+            <!-- box-4 over -->
         </div>
         <!--fancyBox over-->
         <!-- jquery -->

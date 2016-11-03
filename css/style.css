@@ -4615,7 +4615,15 @@ div.pageGoodsList .actionBox .actionButton:active {
 }
 
 .pageBox {
+  *zoom: 1;
   padding: 20px 0;
+}
+
+.pageBox:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .pageBox .titleBox {
@@ -4627,6 +4635,353 @@ div.pageGoodsList .actionBox .actionButton:active {
 .pageBox .titleBox .title {
   color: #333333;
   line-height: 28px;
+}
+
+.pageBox .sideBox {
+  float: left;
+  width: 210px;
+}
+
+.pageBox .mainBox {
+  float: right;
+  width: 980px;
+}
+
+.pageBox .mainTitleBox {
+  *zoom: 1;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.pageBox .mainTitleBox:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.pageBox .mainTitleBox .title {
+  float: left;
+}
+
+.pageBox .mainTitleBox a.more {
+  display: block;
+  float: right;
+  line-height: 28px;
+  color: #999999;
+}
+
+.pageBox .mainTitleBox a.more:hover {
+  color: #00a650;
+}
+
+ul.pageSideNav {
+  margin-bottom: 20px;
+}
+
+ul.pageSideNav li {
+  margin-bottom: 5px;
+}
+
+ul.pageSideNav li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333333;
+  background: #f1f1f1;
+  border: 1px solid #dfdfdf;
+}
+
+ul.pageSideNav li a i {
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+ul.pageSideNav li a:hover {
+  color: #00a650;
+  border-color: #00a650;
+  background: #fff;
+}
+
+ul.pageSideNav li a:hover i {
+  color: #00a650;
+}
+
+ul.pageSideNav li.current a {
+  color: #fff;
+  background: #00a650;
+  border: 1px solid #00a650;
+}
+
+ul.pageSideNav li.current a:hover .fontIcon {
+  color: #fff;
+}
+
+ul.pageSideNav li.current a .fontIcon {
+  color: #fff;
+}
+
+ul.pageSideNav li .fontIcon {
+  margin-right: 15px;
+  color: #dfdfdf;
+}
+
+.userBox .userInfoBox {
+  margin-bottom: 10px;
+  border: 1px solid #dfdfdf;
+}
+
+.userBox .userInfoBox .info {
+  padding: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.userBox .userInfoBox .info .title {
+  color: #00a650;
+}
+
+.userBox .userInfoBox .info p span {
+  color: #dfdfdf;
+}
+
+.userBox .userInfoBox .info p a {
+  margin-left: 10px;
+  padding: 0 10px;
+  border: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+.userBox .userInfoBox .info p a:hover {
+  border-color: #00a650;
+  background-color: #fff;
+}
+
+.userBox .userInfoBox .array {
+  *zoom: 1;
+  border-top: none;
+}
+
+.userBox .userInfoBox .array:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.userBox .userInfoBox .array .group {
+  float: left;
+  width: 325px;
+  border-left: 1px solid #dfdfdf;
+}
+
+.userBox .userInfoBox .array .group:first-child {
+  width: 326px;
+  border: none;
+}
+
+.userBox .userInfoBox .array .group a {
+  *zoom: 1;
+  position: relative;
+  display: block;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.userBox .userInfoBox .array .group a:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.userBox .userInfoBox .array .group a:hover {
+  background-color: #fff;
+}
+
+.userBox .userInfoBox .array .group i {
+  float: left;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
+  line-height: 60px;
+  margin-top: 3px;
+  margin-right: 15px;
+}
+
+.userBox .userInfoBox .array .group .text {
+  float: left;
+  height: 65px;
+}
+
+.userBox .userInfoBox .array .group .text .title {
+  color: #666666;
+}
+
+.userBox .userInfoBox .array .group .text .number {
+  line-height: 1em;
+}
+
+.userBox .userInfoBox .array .group .text .number small {
+  font-size: 14px;
+}
+
+.orderBox {
+  border: 1px solid #dfdfdf;
+}
+
+table.orderTable {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table.orderTable tr.space {
+  height: 15px;
+  background-color: #f1f1f1;
+}
+
+table.orderTable tr.space td {
+  padding: 0;
+}
+
+table.orderTable tr.orderHeader {
+  color: #666666;
+}
+
+table.orderTable tr.orderHeader span {
+  margin-right: 20px;
+}
+
+table.orderTable tr.orderHeader span a {
+  color: #666666;
+}
+
+table.orderTable tr.orderHeader span a:hover {
+  color: #00a650;
+}
+
+table.orderTable tr.orderHeader .state {
+  float: right;
+}
+
+table.orderTable tr.orderHeader .state i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+table.orderTable tr.orderHeader .payment {
+  color: #F2A30C;
+}
+
+table.orderTable tr.orderHeader .finish {
+  color: #00a650;
+}
+
+table.orderTable th {
+  padding: 0 20px;
+  color: #999999;
+}
+
+table.orderTable td {
+  vertical-align: top;
+  padding: 10px 20px;
+  border-top: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+}
+
+table.orderTable td.orderTableGoodsBox {
+  padding: 0;
+}
+
+table.orderTable td.orderTableGoodsBox .orderTableGoods {
+  padding: 10px 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+table.orderTable td.orderTableGoodsBox .orderTableGoods:last-child {
+  border-bottom: none;
+}
+
+table.orderTable td.orderTableGoodsBox .imageBox {
+  float: left;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 10px;
+  border: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+  display: table;
+  text-align: center;
+  *position: relative;
+}
+
+table.orderTable td.orderTableGoodsBox .imageBox div {
+  display: table-cell;
+  vertical-align: middle;
+  *position: absolute;
+  *top: 50%;
+  *left: 50%;
+}
+
+table.orderTable td.orderTableGoodsBox .imageBox div img {
+  *position: relative;
+  *top: -50%;
+  *left: -50%;
+}
+
+table.orderTable td.orderTableGoodsBox .infoBox {
+  float: left;
+  width: 350px;
+}
+
+table.orderTable td.orderTableGoodsBox .infoBox a.name:hover {
+  text-decoration: underline;
+}
+
+table.orderTable td.orderTableGoodsBox .infoBox .model {
+  color: #999999;
+}
+
+table.orderTable td.orderTableGoodsBox .numberBox {
+  float: right;
+}
+
+table.orderTable td.orderTableGoodsBox .numberBox .number {
+  color: #999999;
+}
+
+table.orderTable td.orderAction a {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  border: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+table.orderTable td.orderAction a:hover {
+  color: #00a650;
+  border-color: #00a650;
+  background-color: #fff;
+}
+
+table.orderTable td.orderAction a.important {
+  color: #fff;
+  border-color: #00a650;
+  background-color: #00a650;
+}
+
+table.orderTable td.orderAction a.important:hover {
+  border-color: #F2A30C;
+  background-color: #F2A30C;
+}
+
+table.orderTable td.orderAction a.delete:hover {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
 }
 
 .stepBox {
@@ -4690,7 +5045,8 @@ div.pageGoodsList .actionBox .actionButton:active {
   display: none;
 }
 
-.stepBox dt, .stepBox dd {
+.stepBox dd,
+.stepBox dt {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -5038,15 +5394,20 @@ div.pageGoodsList .actionBox .actionButton:active {
   background-color: #F2A30C;
 }
 
-.cartEmpty {
+.emptyBox {
   padding: 100px 0;
   text-align: center;
 }
 
-.cartEmpty i.cartEmptyIcon {
-  display: block;
+.emptyBox i {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
   font-size: 80px;
-  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 10px;
   color: #dfdfdf;
 }
 
@@ -5196,49 +5557,4 @@ div.pageGoodsList .actionBox .actionButton:active {
 
 .sideBar .innerBox dl a:hover {
   text-decoration: underline;
-}
-
-ul.sideNav {
-  margin-bottom: 20px;
-}
-
-ul.sideNav li {
-  margin-bottom: 5px;
-}
-
-ul.sideNav li a {
-  display: block;
-  padding: 10px 15px;
-  color: #333333;
-  background: #f1f1f1;
-  border: 1px solid #dfdfdf;
-}
-
-ul.sideNav li a:hover {
-  color: #00a650;
-  border-color: #00a650;
-  background: #fff;
-}
-
-ul.sideNav li a:hover .fontIcon {
-  color: #00a650;
-}
-
-ul.sideNav li.current a {
-  color: #fff;
-  background: #00a650;
-  border: 1px solid #00a650;
-}
-
-ul.sideNav li.current a:hover .fontIcon {
-  color: #fff;
-}
-
-ul.sideNav li.current a .fontIcon {
-  color: #fff;
-}
-
-ul.sideNav li .fontIcon {
-  margin-right: 15px;
-  color: #dfdfdf;
 }
