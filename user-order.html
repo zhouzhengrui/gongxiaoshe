@@ -271,7 +271,9 @@
                 <div class="crumbBox">
                     <a href="index.html">首页</a>
                     <i class="icon-arrow-1-right"></i>
-                    <span>个人中心</span>
+                    <a href="user.html">个人中心</a>
+                    <i class="icon-arrow-1-right"></i>
+                    <span>我的订单</span>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -302,72 +304,27 @@
             <!-- side over -->
             <!-- main start -->
             <div class="mainBox userBox">
-                <!-- info start -->
-                <div class="userInfoBox">
-                    <div class="info">
-                        <h3 class="title">administrator</h3>
-                        <p>默认收货地址：周正锐
-                            <span>/</span> 138****0688
-                            <span>/</span> 安徽省马鞍山市花山区霍里山北路798号市软件园A座427室
-                            <a href="user-address.html">修改</a>
-                        </p>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="array">
-                        <div class="group">
-                            <a href="#">
-                                <i class="icon-RMB-1"></i>
-                                <div class="text">
-                                    <p class="title">待付款</p>
-                                    <h2 class="number">0
-                                        <small>/ 笔订单</small>
-                                    </h2>
-                                </div>
-                                <div class="clear"></div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <a href="#">
-                                <i class="icon-box-1"></i>
-                                <div class="text">
-                                    <p class="title">待发货</p>
-                                    <h2 class="number">1
-                                        <small>/ 笔订单</small>
-                                    </h2>
-                                </div>
-                                <div class="clear"></div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <a href="#">
-                                <i class="icon-truck-1"></i>
-                                <div class="text">
-                                    <p class="title">待收货</p>
-                                    <h2 class="number">3
-                                        <small>/ 笔订单</small>
-                                    </h2>
-                                </div>
-                                <div class="clear"></div>
-                            </a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <!-- info over -->
                 <!-- order start -->
                 <div class="orderBox">
-                    <div class="mainTitleBox">
-                        <h5 class="title">近期订单</h5>
-                        <a href="user-order.html" class="more">查看全部订单</a>
-                        <div class="clear"></div>
+                    <div class="mainTabBox">
+                        <!-- 数字为0时不显示span.label -->
+                        <a class="current" href="user-order.html">所有订单</a>
+                        <a href="#">待付款
+                            <span class="label">1</span>
+                        </a>
+                        <a href="#">待发货
+                            <span class="label">2</span>
+                        </a>
+                        <a href="#">待收货
+                            <span class="label">3</span>
+                        </a>
                     </div>
                     <!-- empty start -->
                     <div class="emptyBox">
                         <i class="icon-order-1"></i>
-                        <p>最近没有下过订单</p>
+                        <p>您还没有下过订单</p>
                         <div class="buttonBox">
-                            <a class="button smallButton" href="user-order.html">查看全部订单</a>
-                            <a class="button smallButton auxButton" href="index.html">回首页</a>
+                            <a class="button smallButton" href="index.html">去购物</a>
                         </div>
                     </div>
                     <!-- empty over -->
@@ -390,7 +347,7 @@
                                 <td colspan="4">
                                     <span>下单时间：2016-07-31 01:32:15</span>
                                     <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
+                                        <a href="order.html">20622683500</a>
                                     </span>
                                     <div class="state payment">待付款
                                         <i class="icon-RMB-1"></i>
@@ -477,7 +434,7 @@
                                 <td colspan="4">
                                     <span>下单时间：2016-07-31 01:32:15</span>
                                     <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
+                                        <a href="order.html">20622683500</a>
                                     </span>
                                     <div class="state payment">待发货
                                         <i class="icon-box-1"></i>
@@ -526,7 +483,7 @@
                                 <td colspan="4">
                                     <span>下单时间：2016-07-31 01:32:15</span>
                                     <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
+                                        <a href="order.html">20622683500</a>
                                     </span>
                                     <div class="state payment">已发货
                                         <i class="icon-truck-1"></i>
@@ -575,7 +532,7 @@
                                 <td colspan="4">
                                     <span>下单时间：2016-07-31 01:32:15</span>
                                     <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
+                                        <a href="order.html">20622683500</a>
                                     </span>
                                     <div class="state finish">已完成
                                         <i class="icon-order-1-finish"></i>
@@ -625,7 +582,7 @@
                                 <td colspan="4">
                                     <span>下单时间：2016-07-31 01:32:15</span>
                                     <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
+                                        <a href="order.html">20622683500</a>
                                     </span>
                                     <div class="state cancel">已取消
                                         <i class="icon-order-1-cancel"></i>
@@ -672,6 +629,20 @@
                     <!-- table over -->
                 </div>
                 <!-- order over -->
+                <!-- pagination start -->
+                <div class="paginationBox">
+                    <div class="pagination">
+                        <a class="noPage" href="javascript:;">上一页</a>
+                        <a class="noPage current" href="javascript:;">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <span>...</span>
+                        <a href="#">99</a>
+                        <a href="#">下一页</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- pagination over -->
             </div>
             <!-- main over -->
             <div class="clear"></div>

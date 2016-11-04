@@ -290,12 +290,6 @@ a .fontIcon {
   background-color: #F2A30C;
 }
 
-.button:active {
-  -webkit-transition: all 0s;
-  transition: all 0s;
-  background: #008540;
-}
-
 .button.auxButton {
   padding: 6px 30px;
   color: #00a650;
@@ -492,7 +486,7 @@ span.label {
   border: 1px solid #dfdfdf;
 }
 
-.tooltipBox:before, .tooltipBox:after {
+.tooltipBox:after, .tooltipBox:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -515,7 +509,7 @@ span.label {
   border-top: 8px solid #fff;
 }
 
-.tooltipBox.bottom:before, .tooltipBox.bottom:after {
+.tooltipBox.bottom:after, .tooltipBox.bottom:before {
   content: "";
   position: absolute;
   bottom: auto;
@@ -4711,6 +4705,7 @@ div.pageGoodsList .actionBox .actionButton:active {
 
 .pageBox .mainTitleBox {
   *zoom: 1;
+  height: 28px;
   padding: 10px 20px;
   border-bottom: 1px solid #dfdfdf;
 }
@@ -4735,6 +4730,37 @@ div.pageGoodsList .actionBox .actionButton:active {
 
 .pageBox .mainTitleBox a.more:hover {
   color: #00a650;
+}
+
+.pageBox .mainTabBox {
+  height: 47px;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+.pageBox .mainTabBox a {
+  display: block;
+  float: left;
+  height: 47px;
+  line-height: 47px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #999999;
+  border-right: 1px solid #dfdfdf;
+}
+
+.pageBox .mainTabBox a:hover {
+  color: #00a650;
+}
+
+.pageBox .mainTabBox a.current {
+  height: 48px;
+  color: #00a650;
+  background-color: #fff;
+}
+
+.pageBox .mainTabBox span.label {
+  font-size: 14px;
 }
 
 ul.pageSideNav {

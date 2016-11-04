@@ -6,6 +6,10 @@
 
 ## 更新记录
 
+### 2016-11-4
+
+> - 上传个人中心-订单列表页
+
 ### 2016-11-3
 
 > - 上传个人中心页
@@ -35,7 +39,7 @@
 
 - [分类菜单 - superFish 1.7.4](http://users.tpg.com.au/j_birch/plugins/superfish/)
 - [滚动图片 - responsiveSlider 1.5.4](http://responsiveslides.com/)
-- [选项卡 - jqueryTools 1.2.6](http://jquerytools.github.io/)
+- [选项卡/提示框 - jqueryTools 1.2.6](http://jquerytools.github.io/)
 - [弹出框 - fancyBox 2.1.5](http://fancyapps.com/fancybox/)
 - [延迟加载 - lazyload 1.9.3](http://www.appelsiini.net/projects/lazyload)
 - [抛物线 - fly 1.0.0](https://github.com/amibug/fly)
@@ -54,3 +58,4 @@
 - 购物车页 `cart.html`
 - 商品列表页 `list-goods.html`
 - 个人中心页 `user.html`
+- 个人中心-订单列表页 `user-order.html`
