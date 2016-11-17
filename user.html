@@ -1,842 +1,762 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="renderer" content="webkit|ie-comp|ie-stand">
-        <title>安徽网上供销社</title>
-        <link rel="icon" href="favicon.ico">
-        <!-- icofont -->
-        <link rel="stylesheet" type="text/css" href="icofont/style.css">
-        <!-- style -->
-        <link rel="stylesheet" type="text/css" href="css/style.min.css">
-        <!--[if lt IE 9]>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>用户中心</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- icofont -->
+    <link rel="stylesheet" type="text/css" href="icofont/style.css">
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="css/fixIE/animateItFixIE.css">
     <![endif]-->
-        <!--[if lt IE 8]>
+    <!--[if lt IE 8]>
     <link rel="stylesheet" type="text/css" href="icofont/ie7/ie7.css">
     <![endif]-->
-        <!--[if IE 6]>
+    <!--[if IE 6]>
     <script type="text/javascript" src="js/fixIE/DD_belatedPNG.js" ></script>
     <script type="text/javascript">
         DD_belatedPNG.fix('img, .png');
     </script>
     <![endif]-->
-    </head>
-    <body>
-        <!--topBar start-->
-        <div class="topBar" id="anchor-top">
-            <div class="container">
-                <p class="pull-left">您好，欢迎光临安徽网上供销社</p>
-                <ul class="topButton pull-right">
-                    <li>
-                        <a href="user.html">个人中心</a>
-                    </li>
-                    <li>
-                        <a href="user-order.html">我的订单</a>
-                    </li>
-                    <li>
-                        <a href="#">客户服务</a>
-                    </li>
-                </ul>
-                <!-- 未登录状态 -->
-                <ul class="login pull-right">
-                    <li>
-                        <a href="login.html" class="important">请登录</a>
-                    </li>
-                    <li>
-                        <a href="#">免费注册</a>
-                    </li>
-                </ul>
-                <!-- 已登录状态 -->
-                <ul class="login pull-right">
-                    <li>
-                        <a href="user.html" class="important">administrator</a>
-                    </li>
-                    <li>
-                        <a href="#">退出</a>
-                    </li>
-                </ul>
+</head>
+
+<body>
+
+<!--topBar start-->
+<div class="topBar" id="anchor-top">
+    <div class="container">
+        <p class="pull-left">您好，欢迎光临安徽网上供销社</p>
+        <ul class="topButton pull-right">
+            <li><a href="user.html">用户中心</a></li>
+            <li><a href="user-order.html">我的订单</a></li>
+            <li><a href="#">客户服务</a></li>
+        </ul>
+        <!-- 未登录状态 -->
+        <ul class="login pull-right">
+            <li><a href="login.html" class="important">请登录</a></li>
+            <li><a href="#">免费注册</a></li>
+        </ul>
+        <!-- 已登录状态 -->
+        <ul class="login pull-right">
+            <li><a href="user.html" class="important">administrator</a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+<!--topBar over-->
+
+<!-- header start -->
+<div class="headerBox">
+    <div class="container">
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+        <!-- search start -->
+        <div class="searchBox">
+            <form action="">
+                <input class="searchInput" type="text" value="请输入您需要的商品名称..." onfocus="if (value =='请输入您需要的商品名称...'){value =''}" onblur="if (value ==''){value='请输入您需要的商品名称...'}">
+                <input class="searchButton" type="submit" name="name" value="搜索">
+                <div class="clear"></div>
+            </form>
+            <div class="searchLink">
+                <span>热门搜索:</span>
+                <a href="#">优质种子</a>
+                <a href="#">化肥</a>
+                <a href="#">米面杂粮</a>
+                <a href="#">下饭菜</a>
+                <a href="#">农家美食</a>
+                <a href="#">厨房调料</a>
+                <a href="#">方便食品</a>
+                <a href="#">酒水饮料</a>
             </div>
         </div>
-        <!--topBar over-->
-        <!-- header start -->
-        <div class="headerBox">
-            <div class="container">
-                <a class="logo" href="index.html">
-                    <img src="img/logo.png" alt="" />
-                </a>
-                <!-- search start -->
-                <div class="searchBox">
-                    <form action="">
-                        <input class="searchInput" type="text" value="请输入您需要的商品名称..." onfocus="if (value =='请输入您需要的商品名称...'){value =''}" onblur="if (value ==''){value='请输入您需要的商品名称...'}">
-                        <input class="searchButton" type="submit" name="name" value="搜索">
+        <!-- search over -->
+        <!-- cart start -->
+        <a href="cart.html" class="shoppingCart iFadeInLeftAnimation">
+            <i class="icon-shoppingCart-1"></i>
+            <span class="text">我的购物车</span>
+            <span class="label" id="top-cart-quantity">0</span>
+            <i class="icon-arrow-1-right iAnimation"></i>
+        </a>
+        <!-- cart over -->
+        <!-- type start -->
+        <div class="typeBox hideTypeMenu">
+            <div class="typeButton">
+                <span>全部商品分类</span>
+                <i class="icon-arrow-1-down"></i>
+            </div>
+            <!-- menu start -->
+            <ul class="typeMenu">
+                <!-- item start -->
+                <li>
+                    <!-- title start -->
+                    <div class="typeTitle">
+                        <a class="title" href="list-goods.html">种子/化肥</a>
+                        <div class="link">
+                            <a href="list-goods.html">优质种子</a>
+                            <a href="list-goods.html">化肥</a>
+                        </div>
+                    </div>
+                    <!-- title over -->
+                    <!-- group start -->
+                    <div class="typeGroup">
+                        <!-- list start -->
+                        <dl>
+                            <dt><a href="list-goods.html">优质种子</a></dt>
+                            <dd>
+                                <a href="list-goods.html">粮油种子</a>
+                                <a href="list-goods.html">蔬菜种子</a>
+                                <a href="list-goods.html">水果种子</a>
+                                <a href="list-goods.html">玉米种子</a>
+                            </dd>
+                            <div class="clear"></div>
+                        </dl>
+                        <!-- list over -->
+                        <!-- list start -->
+                        <dl>
+                            <dt><a href="list-goods.html">化肥</a></dt>
+                            <dd>
+                                <a href="list-goods.html">生物肥</a>
+                                <a href="list-goods.html">有机水溶肥</a>
+                            </dd>
+                            <div class="clear"></div>
+                        </dl>
+                        <!-- list over -->
+                    </div>
+                    <!-- group over -->
+                </li>
+                <!-- item over -->
+                <li>
+                    <div class="typeTitle">
+                        <a class="title" href="#">农副产品</a>
+                        <div class="link">
+                            <a href="#">米面杂粮</a>
+                            <a href="#">下饭菜</a>
+                            <a href="#">农家美食</a>
+                        </div>
+                    </div>
+                    <div class="typeGroup">
+                        <dl>
+                            <dt><a href="#">米面杂粮</a></dt>
+                            <dd>
+                                <a href="#">黑米</a>
+                                <a href="#">黑小米</a>
+                                <a href="#">黑芝麻</a>
+                                <a href="#">黑豆</a>
+                                <a href="#">黄豆</a>
+                                <a href="#">江米</a>
+                                <a href="#">芸豆</a>
+                                <a href="#">燕麦米</a>
+                                <a href="#">薏仁米</a>
+                                <a href="#">玉米碴/玉米糁</a>
+                            </dd>
+                            <div class="clear"></div>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeTitle">
+                        <a class="title" href="#">休闲食品/饮品</a>
+                        <div class="link">
+                            <a href="#">厨房调料</a>
+                            <a href="#">方便食品</a>
+                            <a href="#">酒水饮料</a>
+                        </div>
+                    </div>
+                    <div class="typeGroup"></div>
+                </li>
+                <li>
+                    <div class="typeTitle">
+                        <a class="title" href="#">母婴用品/儿童玩具</a>
+                        <div class="link">
+                            <a href="#">孕妇专区</a>
+                            <a href="#">尿裤/拉拉裤/湿巾</a>
+                        </div>
+                    </div>
+                    <div class="typeGroup"></div>
+                </li>
+                <li>
+                    <div class="typeTitle">
+                        <a class="title" href="#">居家日用</a>
+                        <div class="link">
+                            <a href="#">衣物晾晒</a>
+                            <a href="#">家庭清洁</a>
+                            <a href="#">厨具</a>
+                        </div>
+                    </div>
+                    <div class="typeGroup"></div>
+                </li>
+                <li>
+                    <div class="typeTitle">
+                        <a class="title" href="#">家电/手机/电脑</a>
+                        <div class="link">
+                            <a href="#">大家电</a>
+                            <a href="#">生活电器</a>
+                            <a href="#">厨房电器</a>
+                        </div>
+                    </div>
+                    <div class="typeGroup"></div>
+                </li>
+                <li>
+                    <div class="typeTitle">
+                        <a class="title" href="#">烟花炮竹</a>
+                        <div class="link">
+                            <a href="#">区域专业公司负责经营与配送</a>
+                        </div>
+                    </div>
+                    <div class="typeGroup"></div>
+                </li>
+
+            </ul>
+            <!-- menu over -->
+        </div>
+        <!-- type over -->
+        <!-- menu start -->
+        <ul class="menuBox">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="list-goods.html">种子/化肥</a></li>
+            <li><a href="#">农副产品</a></li>
+            <li><a href="#">母婴/玩具</a></li>
+            <li><a href="#">居家日用</a></li>
+            <li><a href="#">家电/手机/电脑</a></li>
+            <li><a href="#">便民服务</a></li>
+            <li><a href="#">站点导航</a></li>
+        </ul>
+        <!-- menu over -->
+        <img src="img/headerTel.png" alt="" class="headerTel">
+    </div>
+</div>
+<!-- header over -->
+
+<!-- page start -->
+<div class="container pageBox">
+    <div class="titleBox">
+        <h4 class="title">用户中心</h4>
+        <div class="crumbBox">
+            <a href="index.html">首页</a>
+            <i class="icon-arrow-1-right"></i>
+            <span>用户中心</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- side start -->
+    <div class="sideBox pull-left">
+        <!-- nav start -->
+        <ul class="pageSideNav">
+            <!-- 当前页面li添加class="current" -->
+            <li><a href="user-info.html"><i class="icon-user-1"></i>用户信息</a></li>
+            <li><a href="user-order.html"><i class="icon-order-1"></i>我的订单</a></li>
+            <li><a href="user-address.html"><i class="icon-address-1"></i>收货地址管理</a></li>
+            <li><a href="user-password.html"><i class="icon-lock-1"></i>修改密码</a></li>
+        </ul>
+        <!-- nav over -->
+
+    </div>
+    <!-- side over -->
+    <!-- main start -->
+    <div class="mainBox pull-right">
+        <!-- info start -->
+        <div class="innerBox userBox">
+            <div class="info">
+                <h3 class="title">administrator</h3>
+                <p>默认收货地址：周正锐<span>/</span> 138****0688 <span>/</span> 安徽省马鞍山市花山区霍里山北路798号市软件园A座427室 <a href="user-address.html">修改</a></p>
+                <div class="clear"></div>
+            </div>
+            <div class="array">
+                <div class="group">
+                    <a href="#">
+                        <i class="icon-RMB-1"></i>
+                        <div class="text">
+                            <p class="title">待付款</p>
+                            <h2 class="number">0<small>/ 笔订单</small></h2>
+                        </div>
                         <div class="clear"></div>
-                    </form>
-                    <div class="searchLink">
-                        <span>热门搜索:</span>
-                        <a href="#">优质种子</a>
-                        <a href="#">化肥</a>
-                        <a href="#">米面杂粮</a>
-                        <a href="#">下饭菜</a>
-                        <a href="#">农家美食</a>
-                        <a href="#">厨房调料</a>
-                        <a href="#">方便食品</a>
-                        <a href="#">酒水饮料</a>
-                    </div>
+                    </a>
                 </div>
-                <!-- search over -->
-                <!-- cart start -->
-                <a href="cart.html" class="shoppingCart iFadeInLeftAnimation">
-                    <i class="icon-shoppingCart-1"></i>
-                    <span class="text">我的购物车</span>
-                    <span class="label" id="top-cart-quantity">0</span>
-                    <i class="icon-arrow-1-right iAnimation"></i>
-                </a>
-                <!-- cart over -->
-                <!-- menu start -->
-                <ul class="menuBox">
-                    <li>
-                        <a href="index.html">首页</a>
-                    </li>
-                    <li>
-                        <a href="list-goods.html">种子/化肥</a>
-                    </li>
-                    <li>
-                        <a href="#">农副产品</a>
-                    </li>
-                    <li>
-                        <a href="#">母婴/玩具</a>
-                    </li>
-                    <li>
-                        <a href="#">居家日用</a>
-                    </li>
-                    <li>
-                        <a href="#">家电/手机/电脑</a>
-                    </li>
-                    <li>
-                        <a href="#">便民服务</a>
-                    </li>
-                    <li>
-                        <a href="#">站点导航</a>
-                    </li>
-                </ul>
-                <!-- menu over -->
-                <img src="img/headerTel.png" alt="" class="headerTel">
-                <!-- type start -->
-                <div class="typeBox hideTypeMenu">
-                    <div class="typeButton">
-                        <span>全部商品分类</span>
-                        <i class="icon-arrow-1-down"></i>
-                    </div>
-                    <!-- menu start -->
-                    <ul class="typeMenu">
-                        <!-- item start -->
-                        <li>
-                            <!-- title start -->
-                            <div class="typeTitle">
-                                <a class="title" href="list-goods.html">种子/化肥</a>
-                                <div class="link">
-                                    <a href="list-goods.html">优质种子</a>
-                                    <a href="list-goods.html">化肥</a>
-                                </div>
-                            </div>
-                            <!-- title over -->
-                            <!-- group start -->
-                            <div class="typeGroup">
-                                <!-- list start -->
-                                <dl>
-                                    <dt>
-                                        <a href="list-goods.html">优质种子</a>
-                                    </dt>
-                                    <dd>
-                                        <a href="list-goods.html">粮油种子</a>
-                                        <a href="list-goods.html">蔬菜种子</a>
-                                        <a href="list-goods.html">水果种子</a>
-                                        <a href="list-goods.html">玉米种子</a>
-                                    </dd>
-                                    <div class="clear"></div>
-                                </dl>
-                                <!-- list over -->
-                                <!-- list start -->
-                                <dl>
-                                    <dt>
-                                        <a href="list-goods.html">化肥</a>
-                                    </dt>
-                                    <dd>
-                                        <a href="list-goods.html">生物肥</a>
-                                        <a href="list-goods.html">有机水溶肥</a>
-                                    </dd>
-                                    <div class="clear"></div>
-                                </dl>
-                                <!-- list over -->
-                            </div>
-                            <!-- group over -->
-                        </li>
-                        <!-- item over -->
-                        <li>
-                            <div class="typeTitle">
-                                <a class="title" href="#">农副产品</a>
-                                <div class="link">
-                                    <a href="#">米面杂粮</a>
-                                    <a href="#">下饭菜</a>
-                                    <a href="#">农家美食</a>
-                                </div>
-                            </div>
-                            <div class="typeGroup">
-                                <dl>
-                                    <dt>
-                                        <a href="#">米面杂粮</a>
-                                    </dt>
-                                    <dd>
-                                        <a href="#">黑米</a>
-                                        <a href="#">黑小米</a>
-                                        <a href="#">黑芝麻</a>
-                                        <a href="#">黑豆</a>
-                                        <a href="#">黄豆</a>
-                                        <a href="#">江米</a>
-                                        <a href="#">芸豆</a>
-                                        <a href="#">燕麦米</a>
-                                        <a href="#">薏仁米</a>
-                                        <a href="#">玉米碴/玉米糁</a>
-                                    </dd>
-                                    <div class="clear"></div>
-                                </dl>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="typeTitle">
-                                <a class="title" href="#">休闲食品/饮品</a>
-                                <div class="link">
-                                    <a href="#">厨房调料</a>
-                                    <a href="#">方便食品</a>
-                                    <a href="#">酒水饮料</a>
-                                </div>
-                            </div>
-                            <div class="typeGroup"></div>
-                        </li>
-                        <li>
-                            <div class="typeTitle">
-                                <a class="title" href="#">母婴用品/儿童玩具</a>
-                                <div class="link">
-                                    <a href="#">孕妇专区</a>
-                                    <a href="#">尿裤/拉拉裤/湿巾</a>
-                                </div>
-                            </div>
-                            <div class="typeGroup"></div>
-                        </li>
-                        <li>
-                            <div class="typeTitle">
-                                <a class="title" href="#">居家日用</a>
-                                <div class="link">
-                                    <a href="#">衣物晾晒</a>
-                                    <a href="#">家庭清洁</a>
-                                    <a href="#">厨具</a>
-                                </div>
-                            </div>
-                            <div class="typeGroup"></div>
-                        </li>
-                        <li>
-                            <div class="typeTitle">
-                                <a class="title" href="#">家电/手机/电脑</a>
-                                <div class="link">
-                                    <a href="#">大家电</a>
-                                    <a href="#">生活电器</a>
-                                    <a href="#">厨房电器</a>
-                                </div>
-                            </div>
-                            <div class="typeGroup"></div>
-                        </li>
-                        <li>
-                            <div class="typeTitle">
-                                <a class="title" href="#">烟花炮竹</a>
-                                <div class="link">
-                                    <a href="#">区域专业公司负责经营与配送</a>
-                                </div>
-                            </div>
-                            <div class="typeGroup"></div>
-                        </li>
-                    </ul>
-                    <!-- menu over -->
+                <div class="group">
+                    <a href="#">
+                        <i class="icon-box-1"></i>
+                        <div class="text">
+                            <p class="title">待发货</p>
+                            <h2 class="number">1<small>/ 笔订单</small></h2>
+                        </div>
+                        <div class="clear"></div>
+                    </a>
                 </div>
-                <!-- type over -->
-            </div>
-        </div>
-        <!-- header over -->
-        <!-- page start -->
-        <div class="container pageBox">
-            <div class="titleBox">
-                <h4 class="title">个人中心</h4>
-                <div class="crumbBox">
-                    <a href="index.html">首页</a>
-                    <i class="icon-arrow-1-right"></i>
-                    <span>个人中心</span>
+                <div class="group">
+                    <a href="#">
+                        <i class="icon-truck-1"></i>
+                        <div class="text">
+                            <p class="title">待收货</p>
+                            <h2 class="number">3<small>/ 笔订单</small></h2>
+                        </div>
+                        <div class="clear"></div>
+                    </a>
                 </div>
                 <div class="clear"></div>
             </div>
-            <!-- side start -->
-            <div class="sideBox">
-                <!-- nav start -->
-                <ul class="pageSideNav">
-                    <!-- 当前页面li添加class="current" -->
-                    <li>
-                        <a href="user-info.html">
-                            <i class="icon-user-1"></i>个人信息管理</a>
-                    </li>
-                    <li>
-                        <a href="user-order.html">
-                            <i class="icon-order-1"></i>我的订单</a>
-                    </li>
-                    <li>
-                        <a href="user-address.html">
-                            <i class="icon-address-1"></i>收货地址管理</a>
-                    </li>
-                    <li>
-                        <a href="user-password.html">
-                            <i class="icon-lock-1"></i>修改密码</a>
-                    </li>
-                </ul>
-                <!-- nav over -->
+        </div>
+        <!-- info over -->
+        <!-- order start -->
+        <div class="innerBox">
+            <!-- title start -->
+            <div class="mainTitleBox">
+                <h5 class="title">近期订单</h5>
+                <a href="user-order.html" class="more">查看全部订单</a>
+                <div class="clear"></div>
             </div>
-            <!-- side over -->
-            <!-- main start -->
-            <div class="mainBox userBox">
-                <!-- info start -->
-                <div class="userInfoBox">
-                    <div class="info">
-                        <h3 class="title">administrator</h3>
-                        <p>默认收货地址：周正锐
-                            <span>/</span> 138****0688
-                            <span>/</span> 安徽省马鞍山市花山区霍里山北路798号市软件园A座427室
-                            <a href="user-address.html">修改</a>
-                        </p>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="array">
-                        <div class="group">
-                            <a href="#">
-                                <i class="icon-RMB-1"></i>
-                                <div class="text">
-                                    <p class="title">待付款</p>
-                                    <h2 class="number">0
-                                        <small>/ 笔订单</small>
-                                    </h2>
+            <!-- title over -->
+            <!-- empty start -->
+            <div class="emptyBox">
+                <i class="icon-order-1"></i>
+                <p>最近没有下过订单</p>
+                <div class="buttonBox">
+                    <a class="button smallButton" href="user-order.html">查看全部订单</a>
+                    <a class="button smallButton auxButton" href="index.html">回首页</a>
+                </div>
+            </div>
+            <!-- empty over -->
+            <!-- table start -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th align="left">订单详情</th>
+                        <th width="15%">金额</th>
+                        <th width="15%">收货人</th>
+                        <th width="15%">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- group start -->
+                    <tr class="space">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="tableHeader">
+                        <td colspan="4">
+                            <span>下单时间：2016-07-31 01:32:15</span>
+                            <span>订单号：<a href="user-order.html">20622683500</a></span>
+                            <div class="state payment">待付款<i class="icon-RMB-1"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableGoodsBox">
+                            <!-- goods start -->
+                            <div class="tableGoods">
+                                <div class="imageBox">
+                                    <div>
+                                        <a href="#">
+                                            <img class="lazyload" data-original="img/noImage.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="infoBox">
+                                    <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                    <p class="model">200g</p>
+                                </div>
+                                <div class="numberBox">
+                                    <p class="number">x1</p>
                                 </div>
                                 <div class="clear"></div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <a href="#">
-                                <i class="icon-box-1"></i>
-                                <div class="text">
-                                    <p class="title">待发货</p>
-                                    <h2 class="number">1
-                                        <small>/ 笔订单</small>
-                                    </h2>
+                            </div>
+                            <!-- goods over -->
+                            <!-- goods start -->
+                            <div class="tableGoods">
+                                <div class="imageBox">
+                                    <div>
+                                        <a href="#">
+                                            <img class="lazyload" data-original="img/noImage.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="infoBox">
+                                    <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                    <p class="model">200g</p>
+                                </div>
+                                <div class="numberBox">
+                                    <p class="number">x1</p>
                                 </div>
                                 <div class="clear"></div>
-                            </a>
-                        </div>
-                        <div class="group">
-                            <a href="#">
-                                <i class="icon-truck-1"></i>
-                                <div class="text">
-                                    <p class="title">待收货</p>
-                                    <h2 class="number">3
-                                        <small>/ 笔订单</small>
-                                    </h2>
+                            </div>
+                            <!-- goods over -->
+                            <!-- goods start -->
+                            <div class="tableGoods">
+                                <div class="imageBox">
+                                    <div>
+                                        <a href="#">
+                                            <img class="lazyload" data-original="img/noImage.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="infoBox">
+                                    <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                    <p class="model">200g</p>
+                                </div>
+                                <div class="numberBox">
+                                    <p class="number">x1</p>
                                 </div>
                                 <div class="clear"></div>
-                            </a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <!-- info over -->
-                <!-- order start -->
-                <div class="orderBox">
-                    <div class="mainTitleBox">
-                        <h5 class="title">近期订单</h5>
-                        <a href="user-order.html" class="more">查看全部订单</a>
-                        <div class="clear"></div>
-                    </div>
-                    <!-- empty start -->
-                    <div class="emptyBox">
-                        <i class="icon-order-1"></i>
-                        <p>最近没有下过订单</p>
-                        <div class="buttonBox">
-                            <a class="button smallButton" href="user-order.html">查看全部订单</a>
-                            <a class="button smallButton auxButton" href="index.html">回首页</a>
-                        </div>
-                    </div>
-                    <!-- empty over -->
-                    <!-- table start -->
-                    <table class="orderTable">
-                        <thead>
-                            <tr>
-                                <th align="left">订单详情</th>
-                                <th width="15%">金额</th>
-                                <th width="15%">收货人</th>
-                                <th width="15%">操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- group start -->
-                            <tr class="space">
-                                <td colspan="4"></td>
-                            </tr>
-                            <tr class="orderHeader">
-                                <td colspan="4">
-                                    <span>下单时间：2016-07-31 01:32:15</span>
-                                    <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
-                                    </span>
-                                    <div class="state payment">待付款
-                                        <i class="icon-RMB-1"></i>
+                            </div>
+                            <!-- goods over -->
+                        </td>
+                        <td align="center">￥224.00</td>
+                        <td align="center">
+                            <p class="tooltip" title="<p>周正锐 / 138*****0688</p>
+                            <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>">周正锐</p>
+                        </td>
+                        <td class="tableAction">
+                            <a href="#" class="important">去付款</a>
+                            <a href="#">订单详情</a>
+                            <a href="#fancybox-4" class="delete fancyboxButton">取消订单</a>
+                        </td>
+                    </tr>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <tr class="space">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="tableHeader">
+                        <td colspan="4">
+                            <span>下单时间：2016-07-31 01:32:15</span>
+                            <span>订单号：<a href="user-order.html">20622683500</a></span>
+                            <div class="state payment">待发货<i class="icon-box-1"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableGoodsBox">
+                            <!-- goods start -->
+                            <div class="tableGoods">
+                                <div class="imageBox">
+                                    <div>
+                                        <a href="#">
+                                            <img class="lazyload" data-original="img/noImage.png" alt="">
+                                        </a>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="orderTableGoodsBox">
-                                    <!-- goods start -->
-                                    <div class="orderTableGoods">
-                                        <div class="imageBox">
-                                            <div>
-                                                <a href="#">
-                                                    <img class="lazyload" data-original="img/noImage.png" alt=""> </a>
-                                            </div>
-                                        </div>
-                                        <div class="infoBox">
-                                            <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                                            <p class="model">200g</p>
-                                        </div>
-                                        <div class="numberBox">
-                                            <p class="number">x1</p>
-                                        </div>
-                                        <div class="clear"></div>
+                                </div>
+                                <div class="infoBox">
+                                    <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                    <p class="model">200g</p>
+                                </div>
+                                <div class="numberBox">
+                                    <p class="number">x1</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- goods over -->
+                        </td>
+                        <td align="center">￥224.00</td>
+                        <td align="center">
+                            <p class="tooltip" title="<p>周正锐 / 138*****0688</p>
+                            <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>">周正锐</p>
+                        </td>
+                        <td class="tableAction">
+                            <a href="#">订单详情</a>
+                        </td>
+                    </tr>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <tr class="space">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="tableHeader">
+                        <td colspan="4">
+                            <span>下单时间：2016-07-31 01:32:15</span>
+                            <span>订单号：<a href="user-order.html">20622683500</a></span>
+                            <div class="state payment">已发货<i class="icon-truck-1"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableGoodsBox">
+                            <!-- goods start -->
+                            <div class="tableGoods">
+                                <div class="imageBox">
+                                    <div>
+                                        <a href="#">
+                                            <img class="lazyload" data-original="img/noImage.png" alt="">
+                                        </a>
                                     </div>
-                                    <!-- goods over -->
-                                    <!-- goods start -->
-                                    <div class="orderTableGoods">
-                                        <div class="imageBox">
-                                            <div>
-                                                <a href="#">
-                                                    <img class="lazyload" data-original="img/noImage.png" alt=""> </a>
-                                            </div>
-                                        </div>
-                                        <div class="infoBox">
-                                            <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                                            <p class="model">200g</p>
-                                        </div>
-                                        <div class="numberBox">
-                                            <p class="number">x1</p>
-                                        </div>
-                                        <div class="clear"></div>
+                                </div>
+                                <div class="infoBox">
+                                    <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                    <p class="model">200g</p>
+                                </div>
+                                <div class="numberBox">
+                                    <p class="number">x1</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- goods over -->
+                        </td>
+                        <td align="center">￥224.00</td>
+                        <td align="center">
+                            <p class="tooltip" title="<p>周正锐 / 138*****0688</p>
+                            <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>">周正锐</p>
+                        </td>
+                        <td class="tableAction">
+                            <a href="#">订单详情</a>
+                        </td>
+                    </tr>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <tr class="space">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="tableHeader">
+                        <td colspan="4">
+                            <span>下单时间：2016-07-31 01:32:15</span>
+                            <span>订单号：<a href="user-order.html">20622683500</a></span>
+                            <div class="state finish">已完成<i class="icon-order-1-finish"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableGoodsBox">
+                            <!-- goods start -->
+                            <div class="tableGoods">
+                                <div class="imageBox">
+                                    <div>
+                                        <a href="#">
+                                            <img class="lazyload" data-original="img/noImage.png" alt="">
+                                        </a>
                                     </div>
-                                    <!-- goods over -->
-                                    <!-- goods start -->
-                                    <div class="orderTableGoods">
-                                        <div class="imageBox">
-                                            <div>
-                                                <a href="#">
-                                                    <img class="lazyload" data-original="img/noImage.png" alt=""> </a>
-                                            </div>
-                                        </div>
-                                        <div class="infoBox">
-                                            <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                                            <p class="model">200g</p>
-                                        </div>
-                                        <div class="numberBox">
-                                            <p class="number">x1</p>
-                                        </div>
-                                        <div class="clear"></div>
+                                </div>
+                                <div class="infoBox">
+                                    <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                    <p class="model">200g</p>
+                                </div>
+                                <div class="numberBox">
+                                    <p class="number">x1</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- goods over -->
+                        </td>
+                        <td align="center">￥224.00</td>
+                        <td align="center">
+                            <p class="tooltip" title="<p>周正锐 / 138*****0688</p>
+                            <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>">周正锐</p>
+                        </td>
+                        <td class="tableAction">
+                            <a href="#">订单详情</a>
+                            <a href="#fancybox-3" class="delete fancyboxButton">删除订单</a>
+                        </td>
+                    </tr>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <tr class="space">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="tableHeader">
+                        <td colspan="4">
+                            <span>下单时间：2016-07-31 01:32:15</span>
+                            <span>订单号：<a href="user-order.html">20622683500</a></span>
+                            <div class="state cancel">已取消<i class="icon-order-1-cancel"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableGoodsBox">
+                            <!-- goods start -->
+                            <div class="tableGoods">
+                                <div class="imageBox">
+                                    <div>
+                                        <a href="#">
+                                            <img class="lazyload" data-original="img/noImage.png" alt="">
+                                        </a>
                                     </div>
-                                    <!-- goods over -->
-                                </td>
-                                <td align="center">￥224.00</td>
-                                <td align="center">
-                                    <p class="tooltip">周正锐</p>
-                                    <div class="tooltipBox align-left">
-                                        <p>周正锐 / 138*****0688</p>
-                                        <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>
-                                    </div>
-                                </td>
-                                <td class="orderAction">
-                                    <a href="#" class="important">去付款</a>
-                                    <a href="#">订单详情</a>
-                                    <a href="#fancybox-4" class="delete fancyboxButton">取消订单</a>
-                                </td>
-                            </tr>
-                            <!-- group over -->
-                            <!-- group start -->
-                            <tr class="space">
-                                <td colspan="4"></td>
-                            </tr>
-                            <tr class="orderHeader">
-                                <td colspan="4">
-                                    <span>下单时间：2016-07-31 01:32:15</span>
-                                    <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
-                                    </span>
-                                    <div class="state payment">待发货
-                                        <i class="icon-box-1"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="orderTableGoodsBox">
-                                    <!-- goods start -->
-                                    <div class="orderTableGoods">
-                                        <div class="imageBox">
-                                            <div>
-                                                <a href="#">
-                                                    <img class="lazyload" data-original="img/noImage.png" alt=""> </a>
-                                            </div>
-                                        </div>
-                                        <div class="infoBox">
-                                            <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                                            <p class="model">200g</p>
-                                        </div>
-                                        <div class="numberBox">
-                                            <p class="number">x1</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <!-- goods over -->
-                                </td>
-                                <td align="center">￥224.00</td>
-                                <td align="center">
-                                    <p class="tooltip">周正锐</p>
-                                    <div class="tooltipBox align-left">
-                                        <p>周正锐 / 138*****0688</p>
-                                        <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>
-                                    </div>
-                                </td>
-                                <td class="orderAction">
-                                    <a href="#">订单详情</a>
-                                </td>
-                            </tr>
-                            <!-- group over -->
-                            <!-- group start -->
-                            <tr class="space">
-                                <td colspan="4"></td>
-                            </tr>
-                            <tr class="orderHeader">
-                                <td colspan="4">
-                                    <span>下单时间：2016-07-31 01:32:15</span>
-                                    <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
-                                    </span>
-                                    <div class="state payment">已发货
-                                        <i class="icon-truck-1"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="orderTableGoodsBox">
-                                    <!-- goods start -->
-                                    <div class="orderTableGoods">
-                                        <div class="imageBox">
-                                            <div>
-                                                <a href="#">
-                                                    <img class="lazyload" data-original="img/noImage.png" alt=""> </a>
-                                            </div>
-                                        </div>
-                                        <div class="infoBox">
-                                            <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                                            <p class="model">200g</p>
-                                        </div>
-                                        <div class="numberBox">
-                                            <p class="number">x1</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <!-- goods over -->
-                                </td>
-                                <td align="center">￥224.00</td>
-                                <td align="center">
-                                    <p class="tooltip">周正锐</p>
-                                    <div class="tooltipBox align-left">
-                                        <p>周正锐 / 138*****0688</p>
-                                        <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>
-                                    </div>
-                                </td>
-                                <td class="orderAction">
-                                    <a href="#">订单详情</a>
-                                </td>
-                            </tr>
-                            <!-- group over -->
-                            <!-- group start -->
-                            <tr class="space">
-                                <td colspan="4"></td>
-                            </tr>
-                            <tr class="orderHeader">
-                                <td colspan="4">
-                                    <span>下单时间：2016-07-31 01:32:15</span>
-                                    <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
-                                    </span>
-                                    <div class="state finish">已完成
-                                        <i class="icon-order-1-finish"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="orderTableGoodsBox">
-                                    <!-- goods start -->
-                                    <div class="orderTableGoods">
-                                        <div class="imageBox">
-                                            <div>
-                                                <a href="#">
-                                                    <img class="lazyload" data-original="img/noImage.png" alt=""> </a>
-                                            </div>
-                                        </div>
-                                        <div class="infoBox">
-                                            <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                                            <p class="model">200g</p>
-                                        </div>
-                                        <div class="numberBox">
-                                            <p class="number">x1</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <!-- goods over -->
-                                </td>
-                                <td align="center">￥224.00</td>
-                                <td align="center">
-                                    <p class="tooltip">周正锐</p>
-                                    <div class="tooltipBox align-left">
-                                        <p>周正锐 / 138*****0688</p>
-                                        <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>
-                                    </div>
-                                </td>
-                                <td class="orderAction">
-                                    <a href="#">订单详情</a>
-                                    <a href="#fancybox-3" class="delete fancyboxButton">删除订单</a>
-                                </td>
-                            </tr>
-                            <!-- group over -->
-                            <!-- group start -->
-                            <tr class="space">
-                                <td colspan="4"></td>
-                            </tr>
-                            <tr class="orderHeader">
-                                <td colspan="4">
-                                    <span>下单时间：2016-07-31 01:32:15</span>
-                                    <span>订单号：
-                                        <a href="user-order.html">20622683500</a>
-                                    </span>
-                                    <div class="state cancel">已取消
-                                        <i class="icon-order-1-cancel"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="orderTableGoodsBox">
-                                    <!-- goods start -->
-                                    <div class="orderTableGoods">
-                                        <div class="imageBox">
-                                            <div>
-                                                <a href="#">
-                                                    <img class="lazyload" data-original="img/noImage.png" alt=""> </a>
-                                            </div>
-                                        </div>
-                                        <div class="infoBox">
-                                            <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                                            <p class="model">200g</p>
-                                        </div>
-                                        <div class="numberBox">
-                                            <p class="number">x1</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <!-- goods over -->
-                                </td>
-                                <td align="center">￥224.00</td>
-                                <td align="center">
-                                    <p class="tooltip">周正锐</p>
-                                    <div class="tooltipBox align-left">
-                                        <p>周正锐 / 138*****0688</p>
-                                        <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>
-                                    </div>
-                                </td>
-                                <td class="orderAction">
-                                    <a href="#">订单详情</a>
-                                    <a href="#fancybox-3" class="delete fancyboxButton">删除订单</a>
-                                </td>
-                            </tr>
-                            <!-- group over -->
-                        </tbody>
-                    </table>
-                    <!-- table over -->
-                </div>
-                <!-- order over -->
-            </div>
-            <!-- main over -->
-            <div class="clear"></div>
+                                </div>
+                                <div class="infoBox">
+                                    <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
+                                    <p class="model">200g</p>
+                                </div>
+                                <div class="numberBox">
+                                    <p class="number">x1</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- goods over -->
+                        </td>
+                        <td align="center">￥224.00</td>
+                        <td align="center">
+                            <p class="tooltip" title="<p>周正锐 / 138*****0688</p>
+                            <p>安徽省马鞍山市花山区霍里山北路798号市软件园A座427室</p>">周正锐</p>
+                        </td>
+                        <td class="tableAction">
+                            <a href="#">订单详情</a>
+                            <a href="#fancybox-3" class="delete fancyboxButton">删除订单</a>
+                        </td>
+                    </tr>
+                    <!-- group over -->
+                </tbody>
+            </table>
+            <!-- table over -->
         </div>
-        <!-- page over -->
-        <!--footer start-->
-        <div class="footerBox">
-            <div class="container">
-                <!-- link start -->
-                <div class="footerLink">
-                    <dl>
-                        <dt>新手上路</dt>
-                        <dd>
-                            <a href="#">如何注册</a>
-                            <a href="#">购物流程</a>
-                            <a href="#">贴心助手</a>
-                            <a href="#">隐私申明</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>配送与支付</dt>
-                        <dd>
-                            <a href="#">配送时间及费用</a>
-                            <a href="#">服务协议</a>
-                            <a href="#">支付方式说明</a>
-                            <a href="#">隐私申明</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>会员中心</dt>
-                        <dd>
-                            <a href="#">资金管理</a>
-                            <a href="#">我的收藏</a>
-                            <a href="#">我的订单</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>关于我们</dt>
-                        <dd>
-                            <a href="#">联系我们</a>
-                            <a href="#">公司简介</a>
-                            <a href="#">商城动态</a>
-                            <a href="#">售后服务</a>
-                        </dd>
-                    </dl>
-                </div>
-                <!-- link over -->
-                <img class="footerImage" src="img/footerTel.png" alt=""> </div>
+        <!-- order over -->
+    </div>
+    <!-- main over -->
+    <div class="clear"></div>
+</div>
+<!-- page over -->
+<!--footer start-->
+<div class="footerBox">
+    <div class="container">
+        <!-- link start -->
+        <div class="footerLink">
+            <dl>
+                <dt>新手上路</dt>
+                <dd>
+                    <a href="#">如何注册</a>
+                    <a href="#">购物流程</a>
+                    <a href="#">贴心助手</a>
+                    <a href="#">隐私申明</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>配送与支付</dt>
+                <dd>
+                    <a href="#">配送时间及费用</a>
+                    <a href="#">服务协议</a>
+                    <a href="#">支付方式说明</a>
+                    <a href="#">隐私申明</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>会员中心</dt>
+                <dd>
+                    <a href="#">资金管理</a>
+                    <a href="#">我的收藏</a>
+                    <a href="#">我的订单</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd>
+                    <a href="#">联系我们</a>
+                    <a href="#">公司简介</a>
+                    <a href="#">商城动态</a>
+                    <a href="#">售后服务</a>
+                </dd>
+            </dl>
         </div>
-        <!--footer over-->
-        <!--bottomBar start-->
-        <div class="bottomBar">
-            <div class="container">
-                <p class="pull-left">© Copyright 2016 by 安徽网上供销社. All rights reserved</p>
-                <p class="pull-right">技术支持 [
-                    <a href="http://www.maszy.cn" target="_blank">志业软件科技</a> ]</p>
-            </div>
+        <!-- link over -->
+        <img class="footerImage" src="img/footerTel.png" alt="">
+    </div>
+</div>
+<!--footer over-->
+
+<!--bottomBar start-->
+<div class="bottomBar">
+    <div class="container">
+        <p class="pull-left">© Copyright 2016 by 安徽网上供销社. All rights reserved</p>
+        <p class="pull-right">技术支持 [ <a href="http://www.maszy.cn" target="_blank">志业软件科技</a> ]</p>
+    </div>
+</div>
+<!--bottomBar over-->
+
+<!--sideFixed start-->
+<div class="sideFixed">
+    <a class="sideButton sideCart" href="cart.html">
+        <i class="sideCart icon-shoppingCart-1"></i>
+        <span class="text">购物车</span>
+        <span class="label" id="side-cart-quantity">0</span>
+        <span class="flyOver"><i class="icon-checkmark-1"></i></span>
+    </a>
+    <a class="sideButton" href="#">
+        <i class="icon-chat-1"></i>
+        <span class="text">联系客服</span>
+    </a>
+    <a class="sideButton anchor" href="javascript:;" rel="anchor-top">
+        <i class="icon-arrow-1-up"></i>
+        <span class="text">回到顶部</span>
+    </a>
+</div>
+<!--sideFixed over-->
+
+<!--fancyBox start-->
+<div style="display: none;">
+    <!-- box-1 start -->
+    <div id="fancybox-1" class="fancyboxGroup">
+        <h4 class="fancyboxTitleBox">删除商品</h4>
+        <div class="fancyboxContentBox">
+            <p>确认要删除该商品吗？</p>
         </div>
-        <!--bottomBar over-->
-        <!--sideFixed start-->
-        <div class="sideFixed">
-            <a class="sideButton sideCart" href="cart.html">
-                <i class="sideCart icon-shoppingCart-1"></i>
-                <span class="text">购物车</span>
-                <span class="label" id="side-cart-quantity">0</span>
-                <span class="flyOver">
-                    <i class="icon-checkmark-1"></i>
-                </span>
-            </a>
-            <a class="sideButton" href="#">
-                <i class="icon-chat-1"></i>
-                <span class="text">联系客服</span>
-            </a>
-            <a class="sideButton anchor" href="javascript:;" rel="anchor-top">
-                <i class="icon-arrow-1-up"></i>
-                <span class="text">回到顶部</span>
-            </a>
+        <div class="fancyboxButtonBox buttonBox">
+            <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();"><span>确定</span></a>
+            <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();"><span>关闭</span></a>
         </div>
-        <!--sideFixed over-->
-        <!--fancyBox start-->
-        <div style="display: none;">
-            <!-- box-1 start -->
-            <div id="fancybox-1" class="fancyboxGroup">
-                <h4 class="fancyboxTitleBox">删除商品</h4>
-                <div class="fancyboxContentBox">
-                    <p>确认要删除该商品吗？</p>
-                </div>
-                <div class="fancyboxButtonBox buttonBox">
-                    <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();">
-                        <span>确定</span>
-                    </a>
-                    <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();">
-                        <span>关闭</span>
-                    </a>
-                </div>
-            </div>
-            <!-- box-1 over -->
-            <!-- box-2 start -->
-            <div id="fancybox-2" class="fancyboxGroup">
-                <h4 class="fancyboxTitleBox">删除商品</h4>
-                <div class="fancyboxContentBox">
-                    <p>确认要删除这些商品吗？</p>
-                </div>
-                <div class="fancyboxButtonBox">
-                    <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();">
-                        <span>确定</span>
-                    </a>
-                    <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();">
-                        <span>关闭</span>
-                    </a>
-                </div>
-            </div>
-            <!-- box-2 over -->
-            <!-- box-3 start -->
-            <div id="fancybox-3" class="fancyboxGroup">
-                <h4 class="fancyboxTitleBox">删除订单</h4>
-                <div class="fancyboxContentBox">
-                    <p>确认要删除该订单吗？</p>
-                </div>
-                <div class="fancyboxButtonBox buttonBox">
-                    <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();">
-                        <span>确定</span>
-                    </a>
-                    <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();">
-                        <span>关闭</span>
-                    </a>
-                </div>
-            </div>
-            <!-- box-3 over -->
-            <!-- box-4 start -->
-            <div id="fancybox-4" class="fancyboxGroup">
-                <h4 class="fancyboxTitleBox">取消订单</h4>
-                <div class="fancyboxContentBox">
-                    <p>确认要取消该订单吗？</p>
-                </div>
-                <div class="fancyboxButtonBox buttonBox">
-                    <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();">
-                        <span>确定</span>
-                    </a>
-                    <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();">
-                        <span>关闭</span>
-                    </a>
-                </div>
-            </div>
-            <!-- box-4 over -->
+    </div>
+    <!-- box-1 over -->
+    <!-- box-2 start -->
+    <div id="fancybox-2" class="fancyboxGroup">
+        <h4 class="fancyboxTitleBox">删除商品</h4>
+        <div class="fancyboxContentBox">
+            <p>确认要删除这些商品吗？</p>
         </div>
-        <!--fancyBox over-->
-        <!-- jquery -->
-        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-        <!-- animateIt -->
-        <script type="text/javascript" src="js/animateIt/animateIt.js"></script>
-        <!-- superFish -->
-        <script type="text/javascript" src="js/superFish/hoverIntent.js"></script>
-        <script type="text/javascript" src="js/superFish/superfish.min.js"></script>
-        <!-- slider -->
-        <script type="text/javascript" src="js/responsiveSlider/responsiveslides.min.js"></script>
-        <!-- tools -->
-        <script type="text/javascript" src="js/fancyBox/jquery.fancybox.js"></script>
-        <!-- lazyload -->
-        <script type="text/javascript" src="js/lazyload/jquery.lazyload.min.js"></script>
-        <!-- fly -->
-        <script type="text/javascript" src="js/fly/jquery.fly.min.js"></script>
-        <!-- fancy box -->
-        <script type="text/javascript" src="js/tools/jquery.tools.min.js"></script>
-        <!-- scripts -->
-        <script type="text/javascript" src="js/scripts.js"></script>
-    </body>
+        <div class="fancyboxButtonBox">
+            <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();"><span>确定</span></a>
+            <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();"><span>关闭</span></a>
+        </div>
+    </div>
+    <!-- box-2 over -->
+    <!-- box-3 start -->
+    <div id="fancybox-3" class="fancyboxGroup">
+        <h4 class="fancyboxTitleBox">删除订单</h4>
+        <div class="fancyboxContentBox">
+            <p>确认要删除该订单吗？</p>
+        </div>
+        <div class="fancyboxButtonBox buttonBox">
+            <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();"><span>确定</span></a>
+            <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();"><span>关闭</span></a>
+        </div>
+    </div>
+    <!-- box-3 over -->
+    <!-- box-4 start -->
+    <div id="fancybox-4" class="fancyboxGroup">
+        <h4 class="fancyboxTitleBox">取消订单</h4>
+        <div class="fancyboxContentBox">
+            <p>确认要取消该订单吗？</p>
+        </div>
+        <div class="fancyboxButtonBox buttonBox">
+            <a class="button smallButton" href="javascript:;" onclick="$.fancybox.close();"><span>确定</span></a>
+            <a class="button smallButton auxButton" href="javascript:;" onclick="$.fancybox.close();"><span>关闭</span></a>
+        </div>
+    </div>
+    <!-- box-4 over -->
+</div>
+<!--fancyBox over-->
+
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<!-- animate -->
+<script type="text/javascript" src="js/animateIt/animateIt.js"></script>
+<!-- superFish -->
+<script type="text/javascript" src="js/superFish/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superFish/superfish.min.js"></script>
+<!-- slider -->
+<script type="text/javascript" src="js/responsiveSlider/responsiveslides.min.js"></script>
+<!-- jQueryUI -->
+<script type="text/javascript" src="js/jQueryUI/jquery-ui.min.js"></script>
+<!-- lazyload -->
+<script type="text/javascript" src="js/lazyload/jquery.lazyload.min.js"></script>
+<!-- fly -->
+<script type="text/javascript" src="js/fly/jquery.fly.min.js"></script>
+<!-- fancy box -->
+<script type="text/javascript" src="js/fancyBox/jquery.fancybox.js"></script>
+<!-- validate -->
+<script type="text/javascript" src="js/validate/jquery.validate.min.js"></script>
+<!-- cxSelect -->
+<script type="text/javascript" src="js/cxSelect/jquery.cxselect.min.js"></script>
+<!-- scrollable -->
+<script type="text/javascript" src="js/scrollable/scrollable.min.js"></script>
+<!-- elevateZoom -->
+<script type="text/javascript" src="js/elevateZoom/jquery.elevateZoom.min.js"></script>
+<!-- scripts -->
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<!-- validate demo -->
+<script type="text/javascript" src="js/validate.js"></script>
+
+</body>
 </html>
+

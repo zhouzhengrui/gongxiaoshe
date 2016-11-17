@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?c95sgf');
-  src:  url('fonts/icomoon.eot?c95sgf#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?c95sgf') format('truetype'),
-    url('fonts/icomoon.woff?c95sgf') format('woff'),
-    url('fonts/icomoon.svg?c95sgf#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?h9rc4o');
+  src:  url('fonts/icomoon.eot?h9rc4o#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?h9rc4o') format('truetype'),
+    url('fonts/icomoon.woff?h9rc4o') format('woff'),
+    url('fonts/icomoon.svg?h9rc4o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,18 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calendar-1:before {
+  content: "\e918";
+}
+.icon-praise-1:before {
+  content: "\e915";
+}
+.icon-news-1:before {
+  content: "\e916";
+}
+.icon-notice-1:before {
+  content: "\e917";
+}
 .icon-truck-1:before {
   content: "\e908";
 }
@@ -62,6 +74,12 @@ i {
 }
 .icon-list-1:before {
   content: "\e905";
+}
+.icon-plus-1:before {
+  content: "\e913";
+}
+.icon-minus-1:before {
+  content: "\e914";
 }
 .icon-checkmark-1:before {
   content: "\e907";

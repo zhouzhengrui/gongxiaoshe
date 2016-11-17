@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <title>购物车</title>
+    <title>新闻列表</title>
     <link rel="icon" href="favicon.ico">
     <!-- icofont -->
     <link rel="stylesheet" type="text/css" href="icofont/style.css">
@@ -232,160 +232,81 @@
 </div>
 <!-- header over -->
 
-<!-- main start -->
+<!-- page start -->
 <div class="container pageBox">
     <div class="titleBox">
-        <h4 class="title">我的购物车</h4>
-        <!-- 无商品移除stepBox -->
-        <div class="stepBox">
-            <dl class="step stepFirst active">
-                <!-- <dt><i class="icon-checkmark-1"></i></dt> -->
-                <dt>1</dt>
-                <dd>购物车结算</dd>
-            </dl>
-            <dl class="step">
-                <dt>2</dt>
-                <dd>填写核对订单信息</dd>
-            </dl>
-            <dl class="step stepLast">
-                <dt>3</dt>
-                <dd>成功提交订单</dd>
-            </dl>
-            <div class="clear"></div>
+        <h4 class="title">最新动态</h4>
+        <div class="crumbBox">
+            <a href="index.html">首页</a>
+            <i class="icon-arrow-1-right"></i>
+            <a href="list-news.html">最新动态</a>
+            <i class="icon-arrow-1-right"></i>
+            <span>公告</span>
         </div>
         <div class="clear"></div>
     </div>
-    <!-- 无商品显示cartEmpty, 有商品显示cartBox -->
-    <!-- empty start -->
-    <div class="emptyBox">
-        <i class="icon-shoppingCart-1"></i>
-        <p>购物车内暂时没有商品，登录后将显示您之前加入的商品</p>
-        <div class="buttonBox">
-            <a class="button smallButton" href="login.html">登录</a>
-            <a class="button smallButton auxButton" href="#">去购物</a>
-        </div>
+    <!-- side start -->
+    <div class="sideBox pull-left">
+        <!-- nav start -->
+        <ul class="pageSideNav">
+            <li class="current"><a href="list-news.html"><i class="icon-notice-1"></i>公告</a></li>
+            <li><a href="list-news.html"><i class="icon-news-1"></i>新闻</a></li>
+            <li><a href="list-news.html"><i class="icon-praise-1"></i>导购</a></li>
+        </ul>
+        <!-- nav over -->
     </div>
-    <!-- empty over -->
-    <!-- cart start -->
-    <div class="cartBox">
-        <!-- header start -->
-        <div class="cartHeader">
-            <div class="column cartCheckbox">
-                <input type="checkbox" id="headerAll">
-                <label for="headerAll">全选</label>
+    <!-- side over -->
+    <!-- main start -->
+    <div class="mainBox pull-right">
+        <div class="innerBox">
+            <!-- title start -->
+            <div class="mainTitleBox">
+                <h5 class="title">公告</h5>
+                <div class="clear"></div>
             </div>
-            <div class="column cartGoods">商品信息</div>
-            <div class="column cartPrice">单价(元)</div>
-            <div class="column cartQuantity">数量</div>
-            <div class="column cartSum">小计</div>
-            <div class="column cartAction">操作</div>
-            <div class="clear"></div>
+            <!-- title over -->
+            <!-- list start -->
+            <ul class="pageNewsList">
+                <li>
+                    <h5 class="title">
+                        <a href="page-news.html">新闻动态测试</a>
+                    </h5>
+                    <div class="tag">
+                        <span><i class="icon-calendar-1"></i>2016年06月26日</span>
+                    </div>
+                    <p class="text">马鞍山市志业软件科技有限公司为您提供网站建设推广、网站运营维护、软件定制开发、域名注册、虚拟主机、企业VI设计、APP应用开发、移动网站设计开发等多种信息产品和服务...</p>
+                </li>
+                <li>
+                    <h5 class="title">
+                        <a href="page-news.html">新闻动态测试</a>
+                    </h5>
+                    <div class="tag">
+                        <span><i class="icon-calendar-1"></i>2016年06月26日</span>
+                    </div>
+                    <p class="text">马鞍山市志业软件科技有限公司为您提供网站建设推广、网站运营维护、软件定制开发、域名注册、虚拟主机、企业VI设计、APP应用开发、移动网站设计开发等多种信息产品和服务...</p>
+                </li>
+            </ul>
+            <!-- list over -->
         </div>
-        <!-- header over -->
-        <!-- list start -->
-        <div class="cartList">
-            <!-- li start -->
-            <!-- 选中状态添加 rowSelect -->
-            <div class="row rowSelect">
-                <div class="column cartCheckbox">
-                    <input type="checkbox">
-                </div>
-                <div class="column cartGoods">
-                    <div class="imageBox">
-                        <div>
-                            <a href="#">
-                                <img class="lazyload" data-original="img/noImage.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="infoBox">
-                        <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                        <p class="model">200g</p>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="column cartPrice">
-                    <p class="lineThrough">￥77.80</p>
-                    <p class="price">￥67.80</p>
-                </div>
-                <div class="column cartQuantity">
-                    <input class="quantity" value="1">
-                </div>
-                <div class="column cartSum">
-                    <p class="sum">￥67.80</p>
-                </div>
-                <div class="column cartAction">
-                    <a href="#">常规按钮</a>
-                    <a href="#fancybox-1" class="delete fancyboxButton">删除按钮</a>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <!-- li over -->
-            <!-- li start -->
-            <div class="row">
-                <div class="column cartCheckbox">
-                    <input type="checkbox">
-                </div>
-                <div class="column cartGoods">
-                    <div class="imageBox">
-                        <div>
-                            <a href="#">
-                                <img class="lazyload" data-original="img/noImage.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="infoBox">
-                        <a class="name" href="#">金色农华两优凤占杂交中稻种子</a>
-                        <p class="model">200g</p>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="column cartPrice">
-                    <p class="lineThrough">￥77.80</p>
-                    <p class="price">￥67.80</p>
-                </div>
-                <div class="column cartQuantity">
-                    <input class="quantity" value="2">
-                </div>
-                <div class="column cartSum">
-                    <p class="sum">￥67.80</p>
-                </div>
-                <div class="column cartAction">
-                    <a href="#">常规按钮</a>
-                    <a href="#fancybox-1" class="delete fancyboxButton">删除按钮</a>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <!-- li over -->
-        </div>
-        <!-- list over -->
-        <!-- footer start -->
-        <div class="cartFooter">
-            <div class="column cartCheckbox">
-                <input type="checkbox" id="footerAll">
-                <label for="footerAll">全选</label>
-            </div>
-            <div class="column cartFooterLink">
-                <a href="#fancybox-2" class="delete fancyboxButton">删除已选商品</a>
-            </div>
-            <div class="pull-right">
-                <div class="column cartFooterInfo">
-                    <p>已选商品<em>2</em>件</p>
-                    <p>合计 (不含运费):</p>
-                    <p class="price"><span>￥</span><em>33.90</em></p>
-                </div>
-                <div class="column cartSubmit">
-                    <input class="submit" type="submit" value="结算">
-                </div>
-                <div class="clear"></div>
+        <!-- pagination start -->
+        <div class="paginationBox">
+            <div class="pagination">
+                <a class="noPage" href="javascript:;">上一页</a>
+                <a class="noPage current" href="javascript:;">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">99</a>
+                <a href="#">下一页</a>
             </div>
             <div class="clear"></div>
         </div>
-        <!-- footer over -->
+        <!-- pagination over -->
     </div>
-    <!-- cart over -->
+    <!-- main over -->
+    <div class="clear"></div>
 </div>
-<!-- main over -->
+<!-- page over -->
 <!--footer start-->
 <div class="footerBox">
     <div class="container">
