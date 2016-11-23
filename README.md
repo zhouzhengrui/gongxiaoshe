@@ -10,10 +10,16 @@
 
 - 上传订单结算页/订单完成页/订单详情页
 - 兼容性调整, 弃用IE6
-- <head>内的原IE6条件注释改为:
-```
+- 页面头部的原IE6条件注释改为:
+```html
 <!--[if IE 6]>
 <script type="text/javascript" src="js/fixIE/byeIE6.js"></script>
+<![endif]-->
+```
+- 页面尾部js引入部分添加:
+```html
+<!--[if lt IE 10]>
+<script type="text/javascript" src="js/fly/requestAnimationFrame.js"></script>
 <![endif]-->
 ```
 
