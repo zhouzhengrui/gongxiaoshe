@@ -8,14 +8,18 @@
 
 ### 2016-11-23
 
-> - 上传订单结算页, 订单完成页, 订单详情页
+> - 上传订单结算页/订单完成页/订单详情页
+> - 兼容性调整 '<!--[if IE 6]>
+<script type="text/javascript" src="js/fixIE/byeIE6.js"></script>
+<![endif]-->'
+
 
 ### 2016-11-18
 
-> - 上传用户信息页、收货地址页、新建地址页、修改密码页、商品内容页、新闻列表页、新闻内容页
+> - 上传用户信息页/收货地址页/新建地址页/修改密码页/商品内容页/新闻列表页/新闻内容页
 > - 之前的页面有少量改动
 > - 移除jqueryTools插件
-> - 新增jqueryUI、cxSelect、elevateZoom、scrollable、validate插件
+> - 新增jqueryUI/cxSelect/elevateZoom/scrollable/validate插件
 
 ### 2016-11-4
 

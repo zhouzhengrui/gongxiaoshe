@@ -19,10 +19,7 @@
     <link rel="stylesheet" type="text/css" href="icofont/ie7/ie7.css">
     <![endif]-->
     <!--[if IE 6]>
-    <script type="text/javascript" src="js/fixIE/DD_belatedPNG.js" ></script>
-    <script type="text/javascript">
-        DD_belatedPNG.fix('img, .png');
-    </script>
+    <script type="text/javascript" src="js/fixIE/byeIE6.js"></script>
     <![endif]-->
 </head>
 
@@ -482,6 +479,9 @@
 <script type="text/javascript" src="js/lazyload/jquery.lazyload.min.js"></script>
 <!-- fly -->
 <script type="text/javascript" src="js/fly/jquery.fly.min.js"></script>
+<!--[if lt IE 10]>
+<script type="text/javascript" src="js/fly/requestAnimationFrame.js"></script>
+<![endif]-->
 <!-- fancy box -->
 <script type="text/javascript" src="js/fancyBox/jquery.fancybox.js"></script>
 <!-- validate -->

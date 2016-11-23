@@ -176,7 +176,7 @@ jQuery(document).ready(function($) {
         close: function(event, data) {
             $("#" + $(this).attr("id")).trigger("change");
             setTimeout(refreshMenu, 100);
-        },
+        }
     });
 
     function refreshMenu() {
@@ -271,7 +271,7 @@ jQuery(document).ready(function($) {
             } else {
                 $(this).parent().children(".ui-spinner-down,.ui-spinner-up").removeClass('disabled')
             }
-        },
+        }
     });
 
     // --------------------------------------------- goods image --------------------------------------------- //
