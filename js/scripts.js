@@ -42,15 +42,15 @@ jQuery(document).ready(function($) {
         nextText: "<i class='icon-arrow-1-right'></i>",
         maxwidth: ""
     });
-    // var sliderImageLoad = [];
-    // $(".sliderBox img").each(function () {
-    //     var sliderImage = $.Deferred();
-    //     $(this).load(sliderImage.resolve);
-    //     sliderImageLoad.push(sliderImage);
-    // });
-    // $.when.apply(null, sliderImageLoad).done(function () {
-    //     $(".fontIconLoading").remove();
-    // });
+    var sliderImageLoad = [];
+    $(".sliderBox img").each(function () {
+        var sliderImage = $.Deferred();
+        $(this).load(sliderImage.resolve);
+        sliderImageLoad.push(sliderImage);
+    });
+    $.when.apply(null, sliderImageLoad).done(function () {
+        $(".fontIconLoading").remove();
+    });
 
     // text scrool
 
@@ -300,5 +300,15 @@ jQuery(document).ready(function($) {
     });
 
     $(".scrollable").scrollable();
+
+    // --------------------------------------------- order --------------------------------------------- //
+
+    $("ul.orderAddressList li").each(function () {
+        $(this).hover(function () {
+            $(".function", this).show();
+        }, function () {
+            $(".function", this).hide();
+        });
+    });
 
 });

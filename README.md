@@ -6,6 +6,10 @@
 
 ## 更新记录
 
+### 2016-11-23
+
+> - 上传订单结算页, 订单完成页, 订单详情页
+
 ### 2016-11-18
 
 > - 上传用户信息页、收货地址页、新建地址页、修改密码页、商品内容页、新闻列表页、新闻内容页
@@ -59,7 +63,7 @@
 
 - 首页slidershow图片尺寸 `760*455px`
 - 首页产品列表图片尺寸 `130*130px`
-- 购物车产品图片尺寸 `80*80px`
+- 购物车/订单产品图片尺寸 `80*80px`
 - 商品列表页图片尺寸 `219*219px`
 - 商品内容页大图尺寸 `420*420px`
 - 商品内容页缩略图尺寸 `60*60px`
@@ -70,12 +74,15 @@
 - 首页 `index.html`
 - 登录页 `login.html`
 - 购物车 `cart.html`
+- 订单页 `order.html`
+- 订单页-完成 `order-finish.html`
 - 商品列表 `list-goods.html`
 - 商品内容 `page-goods.html`
 - 新闻列表 `list-news.html`
 - 新闻内容 `page-news.html`
 - 个人中心 `user.html`
 - 个人中心-我的订单 `user-order.html`
+- 个人中心-我的订单-订单详情 `user-order-content.html`
 - 个人中心-用户信息 `user-info.html`
 - 个人中心-收货地址管理 `user-address.html`
 - 个人中心-收货地址管理-新建收货地址 `user-address-build.html`

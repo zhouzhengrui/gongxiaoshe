@@ -1610,6 +1610,7 @@ ul.goodsList li .infoBox .price {
   display: block;
   float: right;
   line-height: 28px;
+  margin-left: 10px;
   color: #999999;
 }
 
@@ -1658,6 +1659,15 @@ ul.goodsList li .infoBox .price {
   margin-left: 5px;
   padding: 0 5px;
   font-size: 14px;
+}
+
+.pageBox .mainFullBox {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pageBox .mainFullBox:last-child {
+  margin-bottom: 0;
 }
 
 .pageGoodsListBox {
@@ -2529,6 +2539,10 @@ table.table tr.tableHeader .finish {
   color: #00a650;
 }
 
+table.table tr.tableFooter {
+  background-color: #f1f1f1;
+}
+
 table.table th {
   padding: 0 20px;
   color: #999999;
@@ -2610,6 +2624,9 @@ table.table td.tableInfoBox span.label {
   position: absolute;
   top: 10px;
   right: 20px;
+  color: #00a650;
+  border: 1px solid #00a650;
+  background-color: #fff;
 }
 
 table.table td.tableInfoBox dl {
@@ -2670,6 +2687,23 @@ table.table td.tableAction a.delete:hover {
   color: #E74C3C;
   border-color: #f8c9c5;
   background-color: #fdedec;
+}
+
+table.table td.middle {
+  vertical-align: middle;
+}
+
+table.table td.bottom {
+  vertical-align: bottom;
+}
+
+table.table td em {
+  font-weight: bold;
+  color: #00a650;
+}
+
+table.table td em span.strong {
+  font-size: 24px;
 }
 
 .stepBox {
@@ -3007,7 +3041,7 @@ table.table td.tableAction a.delete:hover {
 }
 
 .cartBox .cartFooter .cartFooterLink a:hover {
-  color: #a94442;
+  color: #E74C3C;
 }
 
 .cartBox .cartFooter .cartFooterInfo p {
@@ -3022,11 +3056,12 @@ table.table td.tableAction a.delete:hover {
 }
 
 .cartBox .cartFooter .cartFooterInfo p.price {
+  font-weight: bold;
   color: #00a650;
 }
 
 .cartBox .cartFooter .cartFooterInfo p.price em {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .cartBox .cartFooter .cartSubmit {
@@ -3041,7 +3076,7 @@ table.table td.tableAction a.delete:hover {
   height: 52px;
   color: #fff;
   background-color: #00a650;
-  font-size: 24px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -3064,6 +3099,10 @@ table.table td.tableAction a.delete:hover {
   line-height: 80px;
   margin-bottom: 10px;
   color: #dfdfdf;
+}
+
+.emptyBox .striking {
+  color: #00a650;
 }
 
 .crumbBox {
@@ -3212,6 +3251,224 @@ table.table td.tableAction a.delete:hover {
 
 .sideBar .innerBox dl a:hover {
   text-decoration: underline;
+}
+
+ul.orderAddressList {
+  padding: 20px;
+}
+
+ul.orderAddressList li {
+  margin-bottom: 10px;
+}
+
+ul.orderAddressList li:hover {
+  background-color: #e6f6ee;
+}
+
+ul.orderAddressList li:last-child {
+  margin-bottom: 0;
+}
+
+ul.orderAddressList .radiocheckBox {
+  margin-right: 10px;
+}
+
+ul.orderAddressList .info {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 10px;
+}
+
+ul.orderAddressList .info span {
+  color: #dfdfdf;
+}
+
+ul.orderAddressList span.label {
+  padding: 2px 10px;
+  color: #00a650;
+  border: 1px solid #00a650;
+  background-color: #fff;
+}
+
+ul.orderAddressList .function {
+  display: none;
+  float: right;
+  padding-right: 20px;
+}
+
+ul.orderAddressList .function a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 38px;
+  line-height: 38px;
+  margin-left: 5px;
+  color: #999999;
+}
+
+ul.orderAddressList .function a:hover {
+  color: #00a650;
+}
+
+ul.orderAddressList .function a.delete:hover {
+  color: #E74C3C;
+}
+
+.orderBottomBox {
+  *zoom: 1;
+}
+
+.orderBottomBox:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.orderBottomBox .submitBox {
+  float: right;
+  text-align: right;
+  padding: 15px 20px;
+  border: 2px solid #00a650;
+}
+
+.orderBottomBox .submitBox p {
+  margin: 5px 0;
+}
+
+.orderBottomBox .submitBox p.line {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.orderBottomBox .submitBox span.title {
+  color: #999999;
+}
+
+.orderBottomBox .submitBox span.price {
+  font-weight: bold;
+  color: #00a650;
+}
+
+.orderBottomBox .submitBox span.price em {
+  font-size: 24px;
+}
+
+.orderBottomBox .buttonBox {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.orderBottomBox .buttonBox .button {
+  font-size: 18px;
+}
+
+.orderInfoBox {
+  *zoom: 1;
+  position: relative;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.orderInfoBox:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.orderInfoBox .infoBox {
+  padding: 15px 20px 10px;
+  margin-right: 290px;
+  background-color: #f1f1f1;
+}
+
+.orderInfoBox dl.info dt {
+  float: left;
+  width: 90px;
+  color: #999999;
+}
+
+.orderInfoBox dl.info dd {
+  margin-left: 90px;
+  margin-bottom: 5px;
+}
+
+.orderInfoBox dl.info dd:last-child {
+  margin-bottom: 0;
+}
+
+.orderInfoBox .stateBox {
+  position: absolute;
+  width: 289px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-left: 1px solid #dfdfdf;
+}
+
+.orderInfoBox .stateBox .state {
+  color: #F2A30C;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.orderInfoBox .stateBox .state i {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.orderInfoBox .stateBox .state a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-top: 10px;
+  padding: 0 20px;
+  height: 24px;
+  line-height: 24px;
+  color: #333333;
+  border: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+}
+
+.orderInfoBox .stateBox .state a:hover {
+  border-color: #F2A30C;
+  background-color: #F2A30C;
+}
+
+.orderInfoBox .stateBox .state a.important {
+  color: #fff;
+  border-color: #00a650;
+  background-color: #00a650;
+}
+
+.orderInfoBox .stateBox .state a.important:hover {
+  border-color: #F2A30C;
+  background-color: #F2A30C;
+}
+
+.orderInfoBox .stateBox .state a.delete:hover {
+  color: #E74C3C;
+  border-color: #f8c9c5;
+  background-color: #fdedec;
+}
+
+.orderInfoBox .stateBox .payment {
+  color: #F2A30C;
+  padding-top: 15px;
+}
+
+.orderInfoBox .stateBox .finish {
+  color: #00a650;
+}
+
+.orderInfoBox .stateBox .cancel {
+  color: #999999;
 }
 
 .formBox {
@@ -3425,6 +3682,7 @@ table.table td.tableAction a.delete:hover {
   *zoom: 1;
   padding: 5px 10px;
   border: 1px solid #dfdfdf;
+  background-color: #fff;
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -3445,7 +3703,7 @@ table.table td.tableAction a.delete:hover {
   height: 14px;
   line-height: 14px;
   margin-top: -3px;
-  margin-right: 5px;
+  margin-right: 10px;
   color: #fff;
   border: 1px solid #dfdfdf;
   background-color: #fff;
