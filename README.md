@@ -1,12 +1,10 @@
 # README
 
+<https://zhouzhengrui.github.io/gongxiaoshe/>  
+
 [更新记录](#Update) / [所用插件](#Plugin) / [相关备注](#Relevant) / [已完成页面](#Pages)
 
-## Test
-
-- <https://zhouzhengrui.github.io/gongxiaoshe/>
-
-## Update [⬆](#README)
+## Update
 
 ### 2016-11-23
 
@@ -62,7 +60,9 @@
 
 - 新建项目，上传首页
 
-## Plugin [⬆](#README)
+[⬆ back to top](#README)
+
+## Plugin
 
 - [分类菜单 - superFish 1.7.4](http://users.tpg.com.au/j_birch/plugins/superfish/)
 - [滚动图片 - responsiveSlider 1.5.4](http://responsiveslides.com/)
@@ -75,7 +75,9 @@
 - [表单验证 - validate 1.15.0](http://jqueryvalidation.org/)
 - [选项卡/提示框/下拉列表/单选复选框/数量加减 - jqueryUI 1.12.1](http://api.jqueryui.com/)
 
-## Relevant [⬆](#README)
+[⬆ back to top](#README)
+
+## Relevant
 
 - 首页slidershow图片尺寸 `760*455px`
 - 首页产品列表图片尺寸 `130*130px`
@@ -85,7 +87,9 @@
 - 商品内容页缩略图尺寸 `60*60px`
 - 商品内容页放大图尺寸 `800*800px`
 
-## Pages [⬆](#README)
+[⬆ back to top](#README)
+
+## Pages
 
 - 首页 `index.html`
 - 登录页 `login.html`
@@ -103,3 +107,5 @@
 - 个人中心-收货地址管理 `user-address.html`
 - 个人中心-收货地址管理-新建收货地址 `user-address-build.html`
 - 个人中心-修改密码 `user-password.html`
+
+[⬆ back to top](#README)
