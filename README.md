@@ -1,8 +1,10 @@
-# README
+# Readme
 
-<https://zhouzhengrui.github.io/gongxiaoshe/>  
+[更新记录](#update) / [所用插件](#plugin) / [相关备注](#relevant) / [已完成页面](#pages)
 
-[更新记录](#Update) / [所用插件](#Plugin) / [相关备注](#Relevant) / [已完成页面](#Pages)
+## Test
+
+<https://zhouzhengrui.github.io/gongxiaoshe/>
 
 ## Update
 
@@ -11,18 +13,20 @@
 - 上传订单结算页/订单完成页/订单详情页
 - 兼容性调整, 弃用IE6
 - 页面头部的原IE6条件注释改为:
-```html
-<!--[if IE 6]>
-<script type="text/javascript" src="js/fixIE/byeIE6.js"></script>
-<![endif]-->
-```
-- 页面尾部js引入部分添加:
-```html
-<!--[if lt IE 10]>
-<script type="text/javascript" src="js/fly/requestAnimationFrame.js"></script>
-<![endif]-->
-```
 
+  ```html
+  <!--[if IE 6]>
+  <script type="text/javascript" src="js/fixIE/byeIE6.js"></script>
+  <![endif]-->
+  ```
+
+- 页面尾部js引入部分添加:
+
+  ```html
+  <!--[if lt IE 10]>
+  <script type="text/javascript" src="js/fly/requestAnimationFrame.js"></script>
+  <![endif]-->
+  ```
 
 ### 2016-11-18
 
@@ -53,14 +57,14 @@
 
 ### 2016-10-24
 
-- 首页添加“返回顶部”按钮
+- 首页添加"返回顶部"按钮
 - 上传登录页、购物车页
 
 ### 2016-10-21
 
 - 新建项目，上传首页
 
-[⬆ back to top](#README)
+[⬆ back to top](#readme)
 
 ## Plugin
 
@@ -75,7 +79,7 @@
 - [表单验证 - validate 1.15.0](http://jqueryvalidation.org/)
 - [选项卡/提示框/下拉列表/单选复选框/数量加减 - jqueryUI 1.12.1](http://api.jqueryui.com/)
 
-[⬆ back to top](#README)
+[⬆ back to top](#readme)
 
 ## Relevant
 
@@ -87,7 +91,7 @@
 - 商品内容页缩略图尺寸 `60*60px`
 - 商品内容页放大图尺寸 `800*800px`
 
-[⬆ back to top](#README)
+[⬆ back to top](#readme)
 
 ## Pages
 
@@ -108,4 +112,4 @@
 - 个人中心-收货地址管理-新建收货地址 `user-address-build.html`
 - 个人中心-修改密码 `user-password.html`
 
-[⬆ back to top](#README)
+[⬆ back to top](#readme)
