@@ -695,6 +695,7 @@ span.label {
 }
 
 .headerBox .shoppingCart i.icon-arrow-1-right {
+  display: block;
   float: right;
   margin-right: 8px;
   font-size: 18px;

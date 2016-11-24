@@ -1,14 +1,16 @@
 # README
 
+[更新记录](#更新记录) / [所用插件](#所用插件) / [相关备注](#相关备注) / [已完成页面](#已完成页面)
+
 ## 页面测试
 
 - <https://zhouzhengrui.github.io/gongxiaoshe/>
 
-## 更新记录
+## 更新记录 [⬆](#readme)
 
 ### 2016-11-23
 
-> - 上传订单结算页/订单完成页/订单详情页
+- 上传订单结算页/订单完成页/订单详情页
 - 兼容性调整, 弃用IE6
 - 页面头部的原IE6条件注释改为:
 ```html
@@ -60,7 +62,7 @@
 
 - 新建项目，上传首页
 
-## 所用插件
+## 所用插件 [⬆](#readme)
 
 - [分类菜单 - superFish 1.7.4](http://users.tpg.com.au/j_birch/plugins/superfish/)
 - [滚动图片 - responsiveSlider 1.5.4](http://responsiveslides.com/)
@@ -73,7 +75,7 @@
 - [表单验证 - validate 1.15.0](http://jqueryvalidation.org/)
 - [选项卡/提示框/下拉列表/单选复选框/数量加减 - jqueryUI 1.12.1](http://api.jqueryui.com/)
 
-## 相关备注
+## 相关备注 [⬆](#readme)
 
 - 首页slidershow图片尺寸 `760*455px`
 - 首页产品列表图片尺寸 `130*130px`
@@ -83,7 +85,7 @@
 - 商品内容页缩略图尺寸 `60*60px`
 - 商品内容页放大图尺寸 `800*800px`
 
-## 已完成页面
+## 已完成页面 [⬆](#readme)
 
 - 首页 `index.html`
 - 登录页 `login.html`
