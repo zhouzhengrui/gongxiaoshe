@@ -2,11 +2,15 @@
 
 [更新记录](#update) / [所用插件](#plugin) / [相关备注](#relevant) / [已完成页面](#pages)
 
-## Test
+## GitHub Pages
 
 <https://zhouzhengrui.github.io/gongxiaoshe/>
 
 ## Update
+
+### 2016-12-6
+
+- 对已知的IE7/8兼容性问题做了修复, 替换css/js/img文件夹, html文件较上一次更新没有改动
 
 ### 2016-11-23
 
@@ -73,7 +77,7 @@
 - [弹出框 - fancyBox 2.1.5](http://fancyapps.com/fancybox/)
 - [延迟加载 - lazyload 1.9.3](http://www.appelsiini.net/projects/lazyload)
 - [抛物线 - fly 1.0.0](https://github.com/amibug/fly)
-- [地区选择 - cxSelect 1.4.1](http://code.ciaoca.com/jquery/cxSelect/)
+- [地区选择 - cxSelect 1.3.11](http://code.ciaoca.com/jquery/cxSelect/)
 - [商品图放大 - elevateZoom 3.0.8](www.elevateweb.co.uk/image-zoom)
 - [商品缩略图滚动 - scrollable](http://jquerytools.github.io/documentation/scrollable/index.html)
 - [表单验证 - validate 1.15.0](http://jqueryvalidation.org/)
@@ -84,12 +88,12 @@
 ## Relevant
 
 - 首页slidershow图片尺寸 `760*455px`
-- 首页产品列表图片尺寸 `130*130px`
-- 购物车/订单产品图片尺寸 `80*80px`
-- 商品列表页图片尺寸 `219*219px`
-- 商品内容页大图尺寸 `420*420px`
-- 商品内容页缩略图尺寸 `60*60px`
-- 商品内容页放大图尺寸 `800*800px`
+- 首页产品列表图片最大尺寸 `130*130px`
+- 购物车/订单产品图片最大尺寸 `80*80px`
+- 商品列表页图片最大尺寸 `219*219px`
+- 商品内容页大图最大尺寸 `420*420px`
+- 商品内容页缩略图最大尺寸 `60*60px`
+- 商品内容页放大图最大尺寸 `800*800px`
 
 [⬆ back to top](#readme)
 

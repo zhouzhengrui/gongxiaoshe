@@ -43,16 +43,16 @@ jQuery(document).ready(function($) {
         maxwidth: ""
     });
     var sliderImageLoad = [];
-    $(".sliderBox img").each(function () {
+    $(".sliderBox img").each(function() {
         var sliderImage = $.Deferred();
         $(this).load(sliderImage.resolve);
         sliderImageLoad.push(sliderImage);
     });
-    $.when.apply(null, sliderImageLoad).done(function () {
+    $.when.apply(null, sliderImageLoad).done(function() {
         $(".fontIconLoading").remove();
     });
 
-    // text scrool
+    // --------------------------------------------- text scrool --------------------------------------------- //
 
     var sideScroll;
     $(".sideScroll").hover(function() {
@@ -290,7 +290,7 @@ jQuery(document).ready(function($) {
         lensFadeIn: 500,
         lensFadeOut: 500,
         borderColour: '#fff',
-        loadingIcon: '../img/loading.gif'
+        loadingIcon: 'img/loading.gif'
     });
 
     $(".zoomImage").bind("click", function(e) {
@@ -303,10 +303,10 @@ jQuery(document).ready(function($) {
 
     // --------------------------------------------- order --------------------------------------------- //
 
-    $("ul.orderAddressList li").each(function () {
-        $(this).hover(function () {
+    $("ul.orderAddressList li").each(function() {
+        $(this).hover(function() {
             $(".function", this).show();
-        }, function () {
+        }, function() {
             $(".function", this).hide();
         });
     });
