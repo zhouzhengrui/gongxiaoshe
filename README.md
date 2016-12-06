@@ -35,7 +35,7 @@
 ### 2016-11-18
 
 - 上传用户信息页/收货地址页/新建地址页/修改密码页/商品内容页/新闻列表页/新闻内容页
-- 之前的页面有少量改动
+- 之前的html页面有少量改动, 整合时发现样式有问题的对比下页面结构
 - 移除jqueryTools插件
 - 新增jqueryUI/cxSelect/elevateZoom/scrollable/validate插件
 
