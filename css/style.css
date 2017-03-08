@@ -1306,6 +1306,8 @@ ul.goodsList li .infoBox .price {
   text-align: center;
   width: 760px;
   height: 455px;
+  background-color: #fff;
+  overflow: hidden;
   z-index: 1;
 }
 
