@@ -131,6 +131,7 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #00a650;
+  cursor: pointer;
 }
 
 a .fontIcon {
@@ -628,7 +629,7 @@ span.label {
 }
 
 .headerBox .searchBox .searchInput {
-  width: 430px;
+  width: 320px;
   height: 20px;
   line-height: 20px;
   padding: 10px;
@@ -650,15 +651,15 @@ span.label {
 }
 
 .headerBox .searchBox .searchLink {
+  width: 444px;
+  height: 20px;
   margin-top: 8px;
   color: #666666;
+  overflow: hidden;
 }
 
 .headerBox .searchBox .searchLink a,
 .headerBox .searchBox .searchLink span {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
   margin-right: 5px;
   *font-size: 12px;
 }
